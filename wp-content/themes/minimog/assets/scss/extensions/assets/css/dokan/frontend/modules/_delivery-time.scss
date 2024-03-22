@@ -1,0 +1,11 @@
+.fc .fc-button-primary:hover {
+	background-color: $button-hover-background;
+	border: 1px solid $button-hover-border;
+	color: $button-hover-text;
+}
+
+.fc-header-toolbar{
+	button {
+		box-shadow: none !important;
+	}
+}

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+
+
+
+
+.tm-swiper.pagination-style-04 .swiper-alt-arrow-next:before {
+  content: "";
+}
+
+.tm-swiper.pagination-style-04 .swiper-alt-arrow-prev:before {
+  content: "";
+}
+
+.tm-swiper.pagination-style-08 .swiper-alt-arrow-next:before {
+  content: "";
+}
+
+.tm-swiper.pagination-style-08 .swiper-alt-arrow-prev:before {
+  content: "";
+}
+
+.tm-swiper .swiper-nav-button svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.tm-swiper .swiper-button-prev i:before {
+  content: "";
+}
+
+.tm-swiper .swiper-button-next i:before {
+  content: "";
+}
+
+.minimog-wpforms-newsletter--yes.minimog-wpforms-style-01 .minimog-wpforms .wpforms-submit:before,
+.minimog-wpforms-newsletter--yes.minimog-wpforms-style-02 .minimog-wpforms .wpforms-submit:before,
+.minimog-wpforms-newsletter--yes.minimog-wpforms-style-04 .minimog-wpforms .wpforms-submit:before,
+.minimog-wpforms-newsletter--yes.minimog-wpforms-style-06 .minimog-wpforms .wpforms-submit:before {
+  content: "";
+}
+
+.minimog-slider-buttons .slider-btn,
+.tm-button .button-icon .minimog-icon,
+.minimog-product-categories.style-02 .category-info i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.rtl .lg-outer {
+  direction: ltr;
+}
+
+.desktop-menu .sm-simple .children .toggle-sub-menu:before {
+  content: "";
+}
+
+.mobile-menu-my-profile:after {
+  content: "";
+}
+
+.page-pagination .page-numbers.next span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.blog-nav-links .prev a:before {
+  content: "";
+}
+
+.blog-nav-links .next a:before {
+  content: "";
+}
+
+.elementor-align-left {
+  text-align: start;
+}
+
+.elementor-align-right {
+  text-align: end;
+}
+
+.minimog-mailchimp-form-style-01 .form-submit button {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.minimog-mailchimp-form-style-04 .button-icon svg {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.wpforms-container.minimog-wpforms .wpforms-five-sixths,
+.wpforms-container.minimog-wpforms .wpforms-four-sixths,
+.wpforms-container.minimog-wpforms .wpforms-four-fifths,
+.wpforms-container.minimog-wpforms .wpforms-one-fifth,
+.wpforms-container.minimog-wpforms .wpforms-one-fourth,
+.wpforms-container.minimog-wpforms .wpforms-one-half,
+.wpforms-container.minimog-wpforms .wpforms-one-sixth,
+.wpforms-container.minimog-wpforms .wpforms-one-third,
+.wpforms-container.minimog-wpforms .wpforms-three-fourths,
+.wpforms-container.minimog-wpforms .wpforms-three-fifths,
+.wpforms-container.minimog-wpforms .wpforms-three-sixths,
+.wpforms-container.minimog-wpforms .wpforms-two-fourths,
+.wpforms-container.minimog-wpforms .wpforms-two-fifths,
+.wpforms-container.minimog-wpforms .wpforms-two-sixths,
+.wpforms-container.minimog-wpforms .wpforms-two-thirds {
+  margin-right: 0 !important;
+}

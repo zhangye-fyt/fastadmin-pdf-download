@@ -1,0 +1,331 @@
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.embed-responsive,
+.video-player {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	height: 0;
+	border-radius: 5px;
+	margin: 45px 0 42px;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+}
+
+.embed-responsive-16by9,
+.video-player {
+	padding-bottom: 56.25%;
+}
+
+.instagram-media {
+	max-width: 100% !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.full-height {
+	min-height: 100vh;
+
+	.admin-bar & {
+		min-height: calc(100vh - 32px);
+	}
+}
+
+.col-content-middle {
+	display: flex;
+	align-items: center;
+}
+
+.font-100 {
+	font-weight: 100 !important;
+}
+
+.font-200 {
+	font-weight: 200 !important;
+}
+
+.font-300 {
+	font-weight: 300 !important;
+}
+
+.font-400 {
+	font-weight: 400 !important;
+}
+
+.font-500 {
+	font-weight: 500 !important;
+}
+
+.font-600 {
+	font-weight: 600 !important;
+}
+
+.font-700 {
+	font-weight: 700 !important;
+}
+
+.font-800 {
+	font-weight: 800 !important;
+}
+
+.font-900 {
+	font-weight: 900 !important;
+}
+
+.heading,
+.heading-color {
+	color: $heading-color;
+}
+
+.display-inline {
+	display: inline !important;
+}
+
+.display-inline-block {
+	display: inline-block !important;
+}
+
+.display-block {
+	display: block !important;
+}
+
+.display-none {
+	display: none !important;
+}
+
+.image-rounded {
+	img {
+		border-radius: inherit;
+	}
+}
+
+.user-select-none {
+	user-select: none !important;
+}
+
+.text-stroke-01 {
+	-webkit-text-fill-color: rgba(0, 0, 0, 0);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: currentColor;
+}
+
+.row-no-gutter {
+	margin-left: 0;
+	margin-right: 0;
+
+	> [class*=col] {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.hide {
+	display: none !important;
+}
+
+.row-flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	.col,
+	.col-grow,
+	.col-shrink {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.col-grow {
+		flex-grow: 1;
+	}
+
+	.col-shrink {
+		flex-shrink: 0;
+	}
+}
+
+.row-middle {
+	align-items: center;
+}
+
+.flex {
+	display: flex;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.post-title-2-rows {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box !important;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+
+	a {
+		display: inline !important;
+	}
+}
+
+.post-title-1-row {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1; /* number of lines to show */
+	-webkit-box-orient: vertical;
+
+	span,
+	a {
+		display: inline !important;
+	}
+}
+
+.primary-color {
+	color: $primary-color;
+}
+
+.primary-fill-color {
+	fill: $primary-color;
+}
+
+.primary-stroke-color {
+	stroke: $primary-color;
+}
+
+.secondary-color {
+	color: $secondary-color;
+}
+
+.secondary-color-important {
+	color: $secondary-color !important;
+}
+
+.secondary-fill-color {
+	fill: $secondary-color;
+}
+
+.secondary-stroke-color {
+	stroke: $secondary-color;
+}
+
+.secondary-font {
+	font-family: $heading2-font-family;
+}
+
+.underline {
+	border-bottom: 1px solid;
+}
+
+.text-decoration-line-through {
+	text-decoration: line-through;
+}
+
+.h-\[20px\] {
+	height: 20px;
+}
+
+.h-\[22px\] {
+	height: 22px;
+}
+
+
+.w-100 {
+	width: 100% !important;
+}
+
+.w-\[20px\] {
+	width: 20px;
+}
+
+.w-\[22px\] {
+	width: 22px;
+}
+
+.scroll-x {
+	position: relative;
+	overflow-x: auto;
+
+	.handheld & {
+		overflow-x: scroll;
+	}
+}
+
+.scroll-y {
+	position: relative;
+	overflow-y: auto;
+
+	.handheld & {
+		overflow-y: scroll;
+	}
+}
+
+.hide-mobile-menu {
+	.mobile-menu & {
+		display: none !important;
+	}
+}
+
+.show-mobile-menu {
+	.desktop-menu & {
+		display: none !important;
+	}
+}
+
+.mb-10 {
+	margin-bottom: 10px !important;
+}
+
+@include media-breakpoint-down(md) {
+	.hide-md {
+		display: none !important;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.hide-sm {
+		display: none !important;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.show-md {
+		display: none !important;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.show-sm {
+		display: none !important;
+	}
+}

@@ -1,0 +1,43 @@
+.wp-block-calendar {
+	overflow-x: auto;
+
+	a {
+		text-decoration: none;
+	}
+
+	td,
+	th {
+		padding: 5px;
+	}
+
+	table {
+		margin: 0 0 5px;
+
+		caption {
+			font-family: $heading-font-family;
+			font-weight: $heading-font-weight-secondary;
+			color: $heading-color;
+			font-size: 16px;
+			margin-bottom: 8px;
+		}
+	}
+
+	#today {
+		color: #fff;
+		background: $heading-color;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	tfoot {
+		td {
+			border: 1px solid rgba(0, 0, 0, .08);
+		}
+
+		a {
+			color: #111;
+		}
+	}
+}

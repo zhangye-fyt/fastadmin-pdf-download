@@ -1,0 +1,50 @@
+.tm-star-rating {
+	--size: 15px;
+	--fill: #{$star-full-color};
+	--half: #{$star-full-color};
+	--empty: #939393;
+	display: inline-block;
+	font-size: 0;
+	line-height: 24px;
+
+	> span {
+		font-size: var(--size);
+	}
+
+	> svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: var(--size);
+		height: auto;
+
+		&.tm-star-full {
+			*[stroke^='#'] {
+				stroke: var(--fill);
+			}
+
+			*[fill^='#'] {
+				fill: var(--fill);
+			}
+		}
+
+		&.tm-star-half {
+			*[stroke^='#'] {
+				stroke: var(--half);
+			}
+
+			*[fill^='#'] {
+				fill: var(--half);
+			}
+		}
+
+		&.tm-star-empty {
+			*[stroke^='#'] {
+				stroke: var(--empty);
+			}
+
+			*[fill^='#'] {
+				fill: var(--empty);
+			}
+		}
+	}
+}

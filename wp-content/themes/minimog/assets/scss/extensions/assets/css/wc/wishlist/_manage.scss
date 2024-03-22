@@ -1,0 +1,27 @@
+#woosw_manage {
+	.woosw-popup-content-mid {
+		padding: 20px 0;
+	}
+
+	table {
+		td {
+			text-align: start;
+			padding: 15px 20px;
+			border: 0;
+		}
+	}
+}
+
+.woosw-new-wishlist {
+	display: flex;
+	align-items: center;
+}
+
+#woosw_wishlist_name {
+	flex-grow: 1;
+}
+
+#woosw_add_wishlist {
+	margin: 0 0 0 10px;
+	padding: 0 10px !important;
+}

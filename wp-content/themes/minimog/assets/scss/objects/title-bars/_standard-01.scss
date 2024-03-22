@@ -1,0 +1,26 @@
+.page-title-bar-standard-01 {
+	.page-title-bar-content {
+		justify-content: center;
+		text-align: center;
+		padding: 31px 0 53px;
+	}
+
+	.heading {
+		max-width: 970px;
+		margin: 0 auto;
+	}
+
+	.page-breadcrumb {
+		display: flex;
+		align-items: center;
+		margin: 0;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-title-bar-standard-01 {
+		.page-title-bar-content {
+			padding: 20px 0 30px;
+		}
+	}
+}

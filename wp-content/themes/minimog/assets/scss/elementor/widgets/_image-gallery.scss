@@ -1,0 +1,31 @@
+.minimog-light-gallery {
+	.minimog-box {
+		&:hover {
+			.minimog-overlay {
+				visibility: visible;
+				opacity: .9;
+			}
+		}
+	}
+
+	.minimog-overlay {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		visibility: hidden;
+		background: #000;
+
+		> div {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 36px;
+			color: #fff;
+		}
+	}
+}

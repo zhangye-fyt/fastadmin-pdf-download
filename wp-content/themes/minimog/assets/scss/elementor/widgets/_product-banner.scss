@@ -1,0 +1,169 @@
+.minimog-product-banner {
+	display: block;
+	width: 100%;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #eee;
+
+	.minimog-image {
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.product-banner-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 30px;
+		display: flex;
+		z-index: 2;
+	}
+
+	.banner-product-title {
+		font-size: 24px;
+		line-height: 1.5;
+		margin: 0;
+	}
+
+	.banner-product-category {
+		font-size: 15px;
+		text-transform: uppercase;
+		color: #333;
+		margin: 0 0 3px;
+	}
+
+	.product-banner-badge {
+		position: absolute;
+		top: 40px;
+		right: 35px;
+		z-index: 1;
+		background: #ffd55a;
+		color: #333;
+		height: 74px;
+		width: 74px;
+		border-radius: 50%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		.badge-value {
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 1;
+		}
+
+		.badge-text {
+			margin-top: 4px;
+			font-size: 16px;
+			line-height: 1;
+		}
+	}
+
+	.best-selling-badge {
+		top: auto;
+		bottom: 35px;
+		right: auto;
+		left: 45%;
+	}
+
+	.price,
+	.amount {
+		font-size: 24px;
+		line-height: 1;
+		font-weight: 700;
+
+		ins {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		del {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: .584em;
+			margin-top: 1px;
+
+			&:before {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.price del,
+	del .amount {
+		color: $text-color;
+	}
+
+	.price {
+		margin: 8px 0 0;
+	}
+
+	.product-banner-button {
+		margin: 28px 0 0;
+	}
+
+	&.style-02 {
+
+		.product-banner-content {
+			padding: 40px;
+
+			@include media-breakpoint-down(md) {
+				padding: 20px;
+			}
+		}
+
+		.banner-product-title {
+			max-width: 250px;
+
+			@include media-breakpoint-down(sm) {
+				max-width: 150px;
+			}
+		}
+
+		.content-bototm {
+			position: absolute;
+			bottom: 40px;
+
+			p {
+				margin-bottom: 5px;
+			}
+
+			@include media-breakpoint-down(sm) {
+				.product-banner-button {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(tablet-extra) {
+	.minimog-product-banner {
+		.banner-product-title {
+			font-size: 21px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(mobile-extra) {
+	.minimog-product-banner {
+		.banner-product-title {
+			font-size: 18px;
+		}
+
+		.product-banner-content {
+			padding: 30px 20px 35px;
+		}
+	}
+}

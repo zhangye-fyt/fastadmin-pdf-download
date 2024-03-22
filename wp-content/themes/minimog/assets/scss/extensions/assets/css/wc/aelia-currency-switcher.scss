@@ -1,0 +1,92 @@
+@import '../base';
+
+.currency-switcher-menu-wrap {
+	.wc_aelia_cs_currency_selector {
+		padding: 0 !important;
+
+		&:hover {
+			.dropdown {
+				visibility: visible;
+				opacity: 1;
+				transform: none;
+			}
+		}
+
+		.selected_currency {
+			border: 0;
+			padding: 0 14px 0 0;
+
+			&:before { // Default arrow.
+				display: none;
+			}
+
+			&:after {
+				@extend %FontAwesomeRegular;
+				content: $fa-angle-down;
+				font-size: 12px;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translate(0, -50%);
+			}
+		}
+
+		.currency_name {
+			margin: 0 0 0 10px;
+			line-height: 26px;
+		}
+
+		.currency_flag {
+			min-width: 25px !important;
+
+			img {
+				max-width: 25px !important;
+				max-height: 26px !important;
+			}
+		}
+
+		.dropdown {
+			@extend %NormalTransition;
+			border: 0;
+			background-color: #fff;
+			box-shadow: 0 20px 30px rgba(0, 0, 0, .12);
+			padding: 18px 18px 22px;
+			top: 100%;
+			left: 0;
+		  	width: auto;
+			display: block !important; // Fix js slide.
+			visibility: hidden;
+			opacity: 0;
+			transform: translateY(20px);
+
+			&.hover-back {
+				left: auto;
+				right: 0;
+			}
+
+			.currencies {
+				margin: 0;
+			}
+
+			.currency {
+				padding: 4px 12px;
+				color: $text-color;
+
+				&.selected {
+					display: none;
+				}
+
+				&:hover {
+					color: $heading-color !important;
+					background: rgba(61, 61, 80, .09);
+				}
+			}
+		}
+	}
+}
+
+.page-top-bar {
+  .wc_aelia_cs_currency_selector .dropdown {
+	 position: fixed;
+  }
+}

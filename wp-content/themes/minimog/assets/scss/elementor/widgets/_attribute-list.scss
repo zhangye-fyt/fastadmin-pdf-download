@@ -1,0 +1,27 @@
+.tm-attribute-list {
+	.list {
+		display: var( --list-display, block );
+	}
+
+	.name {
+		font-size: 20px;
+		line-height: 1.2;
+		margin-bottom: 0;
+	}
+
+	.value {
+		font-size: 16px;
+		line-height: 1.45;
+		margin-top: var( --list-value-margin-top );
+		margin-left: var( --list-value-margin-left );
+	}
+
+	.item {
+		display: var( --list-item-display, block );
+
+		+ .item {
+			margin-top: var( --list-item-margin-top );
+			margin-left: var( --list-item-margin-left );
+		}
+	}
+}

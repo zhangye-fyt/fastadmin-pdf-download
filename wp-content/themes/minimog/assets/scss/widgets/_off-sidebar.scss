@@ -1,0 +1,139 @@
+.btn-close-off-sidebar {
+	display: none;
+}
+
+// Fix flash effect on switching sidebar
+.page-sidebar.sidebar-switching {
+	transition: none !important;
+
+	.page-sidebar-inner {
+		transition: none !important;
+	}
+}
+
+.page-sidebar.sidebar-off {
+	@extend %LightCloseCursor;
+	--popup-background: #fff;
+	--popup-wide: 405px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999999;
+	pointer-events: none;
+	max-width: 100%;
+	flex: 0 0 100%;
+	padding: 0;
+	margin: 0 !important;
+	transition: background .25s cubic-bezier(.645, .045, .355, 1);
+
+	.page-sidebar-inner {
+		position: relative;
+		height: 100%;
+		max-width: 90%;
+		text-align: start;
+		transition: all .3s;
+		cursor: default;
+		width: var(--popup-wide);
+		background: var(--popup-background);
+		padding: 0;
+	}
+
+	.page-sidebar-content-wrap {
+		position: relative;
+		padding: 48px 50px 50px;
+		overflow-y: auto;
+	}
+
+	.btn-close-off-sidebar {
+		position: absolute;
+		top: 3px;
+		right: 0;
+		height: 45px;
+		width: 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 2;
+	}
+
+	&.page-sidebar-left {
+		.page-sidebar-inner {
+			transform: translateX(-100%);
+		}
+	}
+
+	&.page-sidebar-right {
+		.page-sidebar-inner {
+			transform: translateX(100%);
+			float: right;
+		}
+	}
+}
+
+.off-sidebar-opened {
+	.page-sidebar.sidebar-off.off-sidebar-active {
+		pointer-events: auto;
+		background: rgba(0, 0, 0, .4);
+
+		> .page-sidebar-inner {
+			transform: none !important;
+		}
+	}
+}
+
+.btn-open-off-sidebar-mobile {
+	position: fixed;
+	bottom: 50%;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f2f2f2;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+	height: 32px;
+	min-width: 80px;
+	padding: 0 12px;
+	font-size: 14px;
+	font-weight: 500;
+	transform-origin: 0;
+	white-space: nowrap;
+
+	&:hover {
+		color: #fff;
+		background: $heading-color;
+	}
+
+	&.position-left {
+		left: 0;
+		transform: rotate(-90deg) translate(-50%, 50%);
+	}
+
+	&.position-right {
+		left: 100%;
+		transform: rotate(-90deg) translate(-50%, -50%);
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.page-sidebar.sidebar-off {
+		.page-sidebar-content-wrap {
+			padding: 48px 30px 50px;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.page-sidebar1-off-mobile {
+		.btn-open-sidebar1 {
+			display: none;
+		}
+	}
+
+	.page-sidebar2-off-mobile {
+		.btn-open-sidebar2 {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+.minimog-countdown {
+	.countdown-wrap {
+		width: 370px;
+		max-width: 100%;
+	}
+}
+
+.minimog-hide-countdown-text-yes {
+	.countdown-clock {
+		.text {
+			display: none;
+		}
+	}
+}
+
+.countdown-clock {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.number {
+		color: $heading-color;
+		font-size: 60px;
+		font-weight: 300;
+		line-height: 1;
+		text-align: center;
+	}
+
+	.text {
+		color: $heading-color;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 17px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 7px 0 0;
+	}
+
+	.clock-divider {
+		color: #666666;
+		width: 20px;
+		text-align: center;
+		font-size: 30px;
+
+		/*position: relative;
+		top: -20px;*/
+		margin: 0 0 28px;
+
+		&:before {
+			content: ':';
+			line-height: 1;
+			color: #666666;
+		}
+	}
+
+	> div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+}
+
+.minimog-countdown--style-02 {
+	justify-content: center;
+
+	.countdown-wrap {
+		width: 420px;
+		background-color: #faf5e9;
+		padding: 6px 30px;
+		border-radius: $button-rounded;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.sale-text {
+		color: #000;
+		font-size: 14px;
+		line-height: 24px;
+		margin: 0 10px 0 0;
+	}
+
+	.countdown-clock {
+		.number {
+			font-size: 24px;
+			line-height: 1.5;
+			font-weight: $heading-font-weight-bold;
+		}
+
+		.text {
+			font-weight: 700;
+			font-size: 12px;
+			margin: 0;
+		}
+
+		.clock-divider {
+			font-size: 18px;
+			margin-bottom: 0;
+		}
+
+		> div {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(tablet-extra) {
+	.countdown-clock {
+		.number {
+			font-size: 46px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(mobile-extra) {
+	.countdown-clock {
+		.number {
+			font-size: 36px;
+		}
+	}
+}

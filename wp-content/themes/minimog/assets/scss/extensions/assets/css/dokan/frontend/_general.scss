@@ -1,0 +1,98 @@
+input.dokan-toogle-checkbox {
+	&:before {
+		transform: none;
+	}
+
+	&:after {
+		display: none !important;
+	}
+
+	&:checked {
+		background-color: $heading-color !important;
+	}
+}
+
+.select2-search__field {
+	min-width: 0 !important;
+}
+
+.daterangepicker {
+	td {
+		padding: 4px 3px;
+
+		&.active,
+		&:active:hover {
+			color: #fff;
+			background-color: $heading-color;
+		}
+	}
+
+	.drp-buttons {
+		.btn {
+			padding: 0 15px;
+			height: 40px;
+			line-height: 38px;
+		}
+	}
+}
+
+.dokan-pagination-container {
+	text-align: center;
+}
+
+.dokan-pagination {
+	--pagination-current-background: #f3f3f3;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		list-style-type: none;
+		margin: 0 5px;
+		padding: 0;
+		font-size: 16px;
+		font-weight: $body-font-weight-medium;
+		text-transform: uppercase;
+		color: $heading-color;
+
+		> span,
+		> a {
+			font-size: inherit;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			min-width: 40px;
+			height: 40px;
+			border: 1px solid transparent;
+			border-radius: 50%;
+			color: inherit;
+			padding: 0;
+
+			&.prev,
+			&.next {
+				font-size: 12px;
+				border: 0;
+				min-width: 20px;
+			}
+		}
+
+		> a:hover {
+			color: $link-hover-color;
+		}
+
+		&.active {
+			> span,
+			> a {
+				background-color: var(--pagination-current-background);
+			}
+		}
+
+		&.disabled {
+			display: none;
+		}
+	}
+}

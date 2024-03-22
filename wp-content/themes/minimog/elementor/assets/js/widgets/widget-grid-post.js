@@ -1,0 +1,1 @@
+!function(n){"use strict";function e(n,e){n.find(".minimog-grid-wrapper").MinimogGridLayout().MinimogGridQuery()}n("body");n(window).on("elementor/frontend/init",function(){elementorFrontend.hooks.addAction("frontend/element_ready/tm-blog.default",e),elementorFrontend.hooks.addAction("frontend/element_ready/tm-product.default",e)})}(jQuery);

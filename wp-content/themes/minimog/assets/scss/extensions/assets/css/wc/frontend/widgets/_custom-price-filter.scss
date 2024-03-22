@@ -1,0 +1,13 @@
+.minimog-product-price-filter {
+	.amount,
+	.wc-price-separator {
+		font-size: inherit;
+		font-weight: inherit;
+		color: inherit;
+		line-height: 26px;
+	}
+
+	.wc-price-separator {
+		margin: -1px 3px 0;
+	}
+}

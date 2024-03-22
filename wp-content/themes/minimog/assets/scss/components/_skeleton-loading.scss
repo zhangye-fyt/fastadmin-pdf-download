@@ -1,0 +1,89 @@
+/* Loading Animation */
+@keyframes placeholder-background-loading {
+	0% {
+		opacity: .03
+	}
+
+	50% {
+		opacity: .07
+	}
+
+	100% {
+		opacity: .03
+	}
+}
+
+/* Card styles */
+.minimog-skeleton-card {
+	&.style-01 {
+		height: auto;
+		width: 100%;
+		overflow: hidden;
+		padding: 0 0 20px;
+
+		.minimog-skeleton-image {
+			width: 100%;
+			margin: 0 0 var(--thumbnail-spacing, 21px);
+			border-radius: $box-large-rounded;
+
+			&:before {
+				display: block;
+				content: '';
+				padding-top: var(--skeleton-image-height, 100%);
+			}
+		}
+
+		/* Card title */
+		.minimog-skeleton-title {
+			height: 24px;
+			width: 80%;
+			border-radius: $box-rounded;
+		}
+
+		.minimog-skeleton-price {
+			height: 17px;
+			margin: 10px 0 0;
+			border-radius: $box-rounded;
+			width: 40%;
+		}
+
+		.minimog-skeleton-category {
+			height: 12px;
+			margin: 0 0 10px;
+			border-radius: $box-rounded;
+			width: 55%;
+		}
+
+		.minimog-skeleton-rating {
+			margin: 0 0 8px;
+			background: none !important;
+			display: flex;
+
+			.tm-star-rating {
+				--fill: #000 !important;
+				--size: 12px;
+				letter-spacing: 1px;
+				line-height: 20px;
+			}
+		}
+
+		.minimog-skeleton-colors {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.minimog-skeleton-color {
+			width: 26px;
+			height: 26px;
+			border-radius: 50%;
+			margin: 10px 10px 0 0;
+		}
+
+		/* The loading Class */
+		.minimog-skeleton-item {
+			background-color: #000;
+			animation: placeholder-background-loading 1.5s infinite linear;
+		}
+	}
+}

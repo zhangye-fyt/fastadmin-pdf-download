@@ -1,0 +1,14 @@
+.elementor-widget-tm-image-carousel {
+	.tm-slider-widget {
+		width: 100%;
+	}
+
+	.image {
+		line-height: 1;
+		max-width: 100%;
+
+		img {
+			@extend %NormalTransition;
+		}
+	}
+}

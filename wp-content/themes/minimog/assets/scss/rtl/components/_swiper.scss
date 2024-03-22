@@ -1,0 +1,52 @@
+.tm-swiper {
+	&.pagination-style-04 .swiper-alt-arrow-next:before {
+		content: $fa-angle-left;
+	}
+
+	&.pagination-style-04 .swiper-alt-arrow-prev:before {
+		content: $fa-angle-right;
+	}
+
+	&.pagination-style-08 .swiper-alt-arrow-next:before {
+		content: $far-arrow-left;
+	}
+
+	&.pagination-style-08 .swiper-alt-arrow-prev:before {
+		content: $far-arrow-right;
+	}
+
+	.swiper-nav-button  {
+		svg {
+			transform: rotate(180deg);
+		}
+	}
+
+	.swiper-button-prev {
+		i {
+			&:before {
+				content: $far-arrow-right;
+			}
+		}
+	}
+
+	.swiper-button-next {
+		i {
+			&:before {
+				content: $far-arrow-left;
+			}
+		}
+	}
+}
+
+.minimog-wpforms-newsletter--yes.minimog-wpforms-style-01 .minimog-wpforms .wpforms-submit:before, 
+.minimog-wpforms-newsletter--yes.minimog-wpforms-style-02 .minimog-wpforms .wpforms-submit:before, 
+.minimog-wpforms-newsletter--yes.minimog-wpforms-style-04 .minimog-wpforms .wpforms-submit:before, 
+.minimog-wpforms-newsletter--yes.minimog-wpforms-style-06 .minimog-wpforms .wpforms-submit:before {
+	content: $far-arrow-left;
+}
+
+.minimog-slider-buttons .slider-btn,
+.tm-button .button-icon .minimog-icon,
+.minimog-product-categories.style-02 .category-info i {
+	transform: rotate(180deg);
+}

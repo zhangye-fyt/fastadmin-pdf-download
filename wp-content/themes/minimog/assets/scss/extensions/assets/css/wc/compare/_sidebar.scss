@@ -1,0 +1,258 @@
+.woosc-area-open-sidebar {
+	background-color: rgba(0, 0, 0, .7);
+	cursor: url(../../images/cursor/light-close.png) 16 16, pointer;
+	pointer-events: auto;
+}
+
+.woosc-sidebar {
+	font-size: 14px;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	max-width: 460px;
+	box-sizing: border-box;
+	text-align: start;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate3d(100%, 0, 0);
+	transition: all .5s;
+	display: flex;
+	flex-direction: column;
+	cursor: auto;
+
+	&.woosc-sidebar-position-left {
+		right: unset;
+		left: 0;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.woosc-area-open-sidebar & {
+		pointer-events: auto;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.button {
+		padding: 0 15px;
+		min-width: 150px;
+	}
+
+	.woocommerce_loop_add_to_cart_wrap {
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+
+	&.woosc-loading {
+		.woosc-sidebar-items {
+			&:before,
+			&:after {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.woosc-sidebar-items {
+	flex-grow: 1;
+	position: relative;
+	padding: 10px 0;
+	overflow-y: auto;
+
+	&:before {
+		content: '';
+		width: 32px;
+		height: 32px;
+		display: block;
+		margin-top: -16px;
+		margin-left: -16px;
+		background-image: url('../../woocommerce/compare/curve.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 8;
+		animation: woosc-spinner 1s linear infinite;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 7;
+		background-color: rgba(255, 255, 255, .5);
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.woosc-sidebar-top {
+	flex: 0 0 auto;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 60px 0 20px;
+	margin: 0;
+	position: relative;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.woosc-sidebar-close {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	font-size: 0;
+	background: url('../../woocommerce/compare/close-dark.svg') no-repeat center;
+	background-size: 14px;
+}
+
+.woosc-sidebar-item {
+	padding: 0 20px;
+
+	&:first-child {
+		.woosc-sidebar-item-inner {
+			border-top: none;
+		}
+	}
+}
+
+.woosc-sidebar-item-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px dashed #eee;
+
+	> div {
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.woosc-sidebar-item-remove {
+	width: 14px;
+	flex: 0 0 14px;
+	font-size: 0;
+	line-height: 1;
+
+	span {
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		background: url('../../woocommerce/compare/remove-dark.svg') no-repeat center;
+		background-size: 10px;
+		cursor: pointer;
+	}
+}
+
+.woosc-sidebar-item {
+	.woosc-sidebar-item-thumb {
+		width: 80px;
+		flex: 0 0 80px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.woosc-sidebar-item-info {
+		flex-grow: 1;
+
+		.woosc-sidebar-item-name,
+		.woosc-sidebar-item-name a {
+			font-weight: 700;
+			text-decoration: none;
+		}
+	}
+}
+
+.woosc-sidebar-item-action p {
+	margin: 0 !important;
+}
+
+.woosc-sidebar-bot {
+	padding: 20px;
+	text-align: center;
+}
+
+.woosc-sidebar-compare-btn {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding: 0 10px;
+	cursor: pointer;
+	box-sizing: border-box;
+	background-color: #63a86d;
+	color: #fff;
+	font-weight: 700;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	text-transform: uppercase;
+	border-radius: 0;
+	transition: all 0.5s;
+}
+
+.woosc-sidebar-continue {
+	display: block;
+	margin-top: 10px;
+
+	span {
+		@extend %LinkTransition02;
+		font-family: $button-font-family;
+		font-size: $button-font-size;
+		font-weight: $button-font-weight;
+		color: #000;
+		cursor: pointer;
+	}
+}
+
+.woosc-sidebar-btn {
+	@include NormalTransition();
+	display: inline-block;
+	padding: 0 35px;
+	height: 45px;
+	line-height: 43px;
+	outline: none;
+	color: $button-text;
+	border: 1px solid $button-border;
+	background-color: $button-background !important;
+	border-radius: $button-rounded;
+	font-family: $button-font-family;
+	font-size: $button-font-size;
+	font-weight: $button-font-weight;
+	letter-spacing: $button-letter-spacing;
+	text-transform: $button-text-transform;
+	cursor: pointer;
+	text-align: center;
+	user-select: none;
+	box-shadow: none;
+
+	&:hover {
+		color: $button-hover-text;
+		border-color: $button-hover-border;
+		background-color: $button-hover-background !important;
+		box-shadow: 0 0 0 0.2rem $button-hover-background;
+	}
+}

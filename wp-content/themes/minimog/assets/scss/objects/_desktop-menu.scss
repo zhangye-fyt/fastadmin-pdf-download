@@ -1,0 +1,412 @@
+@keyframes show-animation {
+	0% {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes hide-animation {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+}
+
+.desktop-menu {
+	.sm {
+		position: relative;
+		z-index: 9999;
+	}
+
+	.sm,
+	.sm ul,
+	.sm li {
+		display: block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: left;
+		line-height: normal;
+		direction: ltr;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	.sm {
+		> li {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		ul {
+			display: none;
+		}
+
+		li,
+		a {
+			position: relative;
+		}
+
+		a {
+			display: block;
+
+			&.disabled {
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	// End Smartmenus Core
+
+	.sm-simple {
+		li {
+			> a {
+				padding: 13px 58px 13px 20px;
+			}
+		}
+
+		a {
+			&.current {
+				background: #555;
+				color: #fff;
+			}
+
+			&.disabled {
+				color: #ccc;
+			}
+		}
+
+		.children {
+			a {
+				.toggle-sub-menu {
+					position: absolute;
+					top: 50%;
+					right: 0;
+
+					&:before {
+						right: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.toggle-sub-menu {
+		position: relative;
+		margin-left: 13px;
+
+		&:before {
+			@extend %FontAwesomeRegular;
+			content: $fa-angle-down;
+			font-size: 12px;
+			font-weight: inherit;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(0, -50%);
+		}
+	}
+
+	.sub-arrow {
+		display: none;
+	}
+
+	/* Switch to desktop layout
+	-----------------------------------------------
+		These transform the menu tree from
+		collapsible to desktop (navbar + dropdowns)
+	-----------------------------------------------*/
+	/* start... (it's not recommended editing these rules) */
+
+	.sm-simple {
+		ul {
+			position: absolute;
+			width: 12em;
+		}
+
+		ul li,
+		&.sm-vertical li {
+			float: none;
+		}
+
+		a {
+			white-space: nowrap;
+		}
+
+		ul a,
+		&.sm-vertical a {
+			white-space: normal;
+		}
+
+		.sm-nowrap:not(.mega-menu) > li > a,
+		.sm-nowrap:not(.mega-menu) > li > :not(ul) a {
+			white-space: nowrap;
+		}
+	}
+
+	/* ...end */
+
+	.sm-simple {
+		.scroll-up,
+		.scroll-down {
+			position: absolute;
+			display: none;
+			visibility: hidden;
+			overflow: hidden;
+			height: 20px;
+			background: #fff;
+		}
+
+		.scroll-up-arrow,
+		.scroll-down-arrow {
+			position: absolute;
+			top: -2px;
+			left: 50%;
+			overflow: hidden;
+			margin-left: -8px;
+			width: 0;
+			height: 0;
+			border-width: 8px;
+			border-style: dashed dashed solid dashed;
+			border-color: transparent transparent #555 transparent;
+		}
+
+		.scroll-down-arrow {
+			top: 6px;
+			border-style: solid dashed dashed dashed;
+			border-color: #555 transparent transparent transparent;
+		}
+
+		&:not(.sm-vertical) {
+			.has-mega-menu {
+				position: static !important;
+
+				.mega-menu {
+					position: absolute;
+					left: 0;
+					right: 0 !important;
+					margin-left: 0 !important;
+					max-width: 100% !important;
+					width: auto !important;
+				}
+			}
+		}
+
+		&.sm-vertical {
+			display: block;
+
+			.has-mega-menu {
+				.mega-menu {
+					max-width: calc(100vw - 394px) !important;
+					width: 1170px !important;
+				}
+			}
+
+			> li {
+				display: block !important;
+				width: 100%;
+
+				> a {
+
+					.menu-item-wrap {
+						position: relative;
+					}
+
+					.toggle-sub-menu {
+						position: static;
+
+						&:before {
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.menu--primary {
+		text-align: center;
+		line-height: 0;
+	}
+
+	.sm-simple {
+		position: static;
+		display: inline-block;
+
+		> li {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.children {
+			padding: 18px 18px 22px;
+			min-width: 240px !important;
+			border: 0;
+			background: #fff;
+			box-shadow: 0 0 30px rgba(0, 0, 0, .06);
+
+			&.show-animation {
+				animation: show-animation .25s;
+			}
+
+			&.hide-animation {
+				animation: hide-animation .25s;
+			}
+
+			&:not(.mega-menu) {
+				a {
+					color: $text-color;
+				}
+			}
+
+			> li {
+				> a {
+					padding: 6px 12px !important;
+					line-height: 28px !important;
+				}
+
+				&:hover {
+					> a {
+						color: $heading-color;
+						background: rgba(61, 61, 80, .09);
+					}
+				}
+			}
+
+			.toggle-sub-menu {
+				&:before {
+					font-size: 14px;
+					content: $fa-angle-right;
+				}
+			}
+		}
+
+		.has-mega-menu {
+			.scroll-up,
+			.scroll-down {
+				margin-left: 0 !important;
+			}
+		}
+
+		.mega-menu {
+			ul {
+				position: static;
+				display: block;
+				width: auto;
+				border: 0;
+				background: transparent;
+				box-shadow: none;
+			}
+
+			.menu {
+				> li {
+					> a {
+						padding: 8px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Both desktop + mobile.
+.menu__container {
+	--icon-size: 20px;
+
+	.menu-item-wrap {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu-item-icon {
+		@extend %NormalTransition;
+		line-height: 1;
+		flex-shrink: 0;
+		margin-right: 10px;
+
+		svg {
+			display: block;
+			width: var(--icon-size);
+			height: var(--icon-size);
+
+			[stroke]:not([stroke='none']) {
+				stroke: currentColor;
+			}
+
+			[fill]:not([fill='none']) {
+				fill: currentColor;
+			}
+		}
+
+		img {
+			display: block;
+			width: var(--icon-size);
+		}
+	}
+}
+
+.desktop-menu .sm-simple .mega-menu,
+.single-ic_mega_menu.elementor-page .page-content {
+	padding: 32px 0 30px;
+
+	a.minimog-banner {
+		display: flex;
+	}
+}
+
+.mobile-menu {
+	.page-navigation-wrap,
+	.page-navigation {
+		display: none;
+	}
+}
+
+/**
+ * Better display on page load.
+ */
+.primary-nav-rendering {
+	.page-navigation {
+		visibility: hidden;
+		opacity: 0;
+		max-height: 80px;
+		overflow: hidden;
+		pointer-events: none;
+	}
+}
+
+.page-navigation-wrap {
+	position: static;
+}
+
+/**
+ * Mega menu full wide so no need this style
+ */
+@media (min-width: 1200px) {
+	.mega-menu {
+		.elementor-section.elementor-section-full_width > .elementor-container {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+
+	.desktop-menu .sm-simple .mega-menu,
+	.single-ic_mega_menu.elementor-page .page-content {
+		padding: 37px 0 43px;
+	}
+}

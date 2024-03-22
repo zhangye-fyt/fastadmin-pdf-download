@@ -1,0 +1,121 @@
+.wc-bookings-booking-form {
+	border: 0;
+	padding: 0;
+
+	.woocommerce form & {
+		fieldset {
+			border-width: 0;
+			margin-bottom: 0;
+			padding: 10px 0;
+		}
+	}
+
+	.block-picker {
+		li:nth-child(odd) a {
+			background: #fafafa;
+		}
+	}
+
+	.form-field input[type='number'] {
+		width: 100%;
+	}
+
+	.wc-bookings-booking-cost {
+		margin: 0 0 20px;
+		padding: 0;
+		background: none;
+		border: 0;
+	}
+
+	.ui-datepicker th {
+		color: #000;
+	}
+
+	.ui-datepicker td.bookable a {
+		color: #000 !important;
+		text-shadow: none;
+		background: none !important;
+	}
+
+	.block-picker li a.selected {
+		background: #000 !important;
+	}
+}
+
+.wc-bookings-booking-form .block-picker li:nth-child(even) a:hover,
+.wc-bookings-booking-form .block-picker li:nth-child(even) a:focus,
+.wc-bookings-booking-form .block-picker li:nth-child(odd) a:hover,
+.wc-bookings-booking-form .block-picker li:nth-child(odd) a:focus {
+	background-color: #000;
+}
+
+.wc-bookings-date-picker {
+	.ui-datepicker-header {
+		color: $heading-color;
+		background: none;
+		border: 0;
+		border-radius: 0;
+	}
+
+	.ui-widget-content {
+		box-shadow: none;
+	}
+
+	.ui-priority-secondary,
+	.ui-widget-content .ui-priority-secondary,
+	.ui-widget-header .ui-priority-secondary {
+		opacity: 1;
+	}
+
+	.ui-datepicker td a.ui-state-active,
+	.ui-datepicker td a.ui-state-active.ui-state-hover {
+		color: #fff;
+	}
+
+	.ui-datepicker td.bookable-range .ui-state-default {
+		background: #000 !important;
+	}
+
+	.ui-datepicker .ui-datepicker-prev,
+	.ui-datepicker .ui-datepicker-prev-hover {
+		left: 0;
+	}
+
+	.ui-datepicker .ui-datepicker-next,
+	.ui-datepicker .ui-datepicker-next-hover {
+		right: 0;
+	}
+
+	.ui-datepicker .ui-datepicker-prev,
+	.ui-datepicker .ui-datepicker-next {
+		background-color: #000;
+	}
+
+	.ui-datepicker .ui-datepicker-prev-hover,
+	.ui-datepicker .ui-datepicker-next-hover {
+		background-color: #000 !important;
+	}
+}
+
+.single-product {
+	.product-type-booking {
+		.entry-summary {
+			form.cart {
+				border-top: 1px solid #eee;
+				padding-top: 17px;
+
+				table {
+					th,
+					td {
+						text-align: center;
+					}
+
+					td {
+						border: 1px solid #eee;
+					}
+				}
+			}
+		}
+	}
+}
+

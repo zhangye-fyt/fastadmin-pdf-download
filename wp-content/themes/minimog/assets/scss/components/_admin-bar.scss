@@ -1,0 +1,27 @@
+.admin-bar {
+	.page-header.header-pinned {
+		.page-header-inner {
+			top: 32px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.admin-bar {
+		.page-header.header-pinned {
+			.page-header-inner {
+				top: 46px !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.admin-bar {
+		.page-header.header-pinned {
+			.page-header-inner {
+				top: 0 !important;
+			}
+		}
+	}
+}

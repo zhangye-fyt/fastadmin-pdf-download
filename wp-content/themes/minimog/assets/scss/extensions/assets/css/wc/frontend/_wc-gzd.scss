@@ -1,0 +1,90 @@
+/**
+ * Plugin name: Germanized for WooCommerce
+ */
+.woocommerce-gzd-checkout {
+	.woocommerce-checkout-review-order {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#order_payment_heading {
+		display: none !important;
+	}
+
+	.wc-gzd-heading-moved {
+		padding: 0 !important;
+	}
+
+	.checkout-payment-info-heading {
+		order: 97;
+	}
+
+	.woocommerce-checkout-payment {
+		order: 98;
+	}
+
+	.wc-gzd-order-submit {
+		order: 99;
+	}
+
+	.wc-checkout-review-order-table {
+		tbody {
+			tr {
+				&:first-child {
+					border-top: 0;
+					padding: 5px 0 12px;
+				}
+			}
+		}
+	}
+
+	&.woocommerce-multistep-checkout {
+		.row-checkout-wrap {
+			max-width: 800px;
+			margin: 0 auto !important;
+		}
+
+		.col-checkout-review-order {
+			display: block;
+
+			> .inner {
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+		}
+
+		.woocommerce-checkout-review-order {
+			display: block !important;
+		}
+
+		// Hide theme heading.
+		.checkout-payment-info-heading {
+			display: none;
+		}
+
+		// Show plugin heading.
+		#order_payment_heading {
+			display: block !important;
+		}
+
+		.checkout-order-review-heading.wc-gzd-heading-moved {
+			display: none !important;
+		}
+
+		.place-order {
+			border: 0;
+			padding: 0;
+			margin: 0 !important;
+		}
+
+		.step-buttons-payment {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.clear {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_minimog">
+			<key name="top_bar_text"/>
+			<key name="top_bar_countdown_prefix_text"/>
+			<key name="top_bar_countdown_button_text"/>
+			<key name="top_bar_countdown_button_url"/>
+			<key name="header_button_text"/>
+			<key name="header_button_link"/>
+			<key name="title_bar_search_title"/>
+			<key name="title_bar_home_title"/>
+			<key name="title_bar_archive_category_title"/>
+			<key name="title_bar_archive_tag_title"/>
+			<key name="title_bar_archive_author_title"/>
+			<key name="title_bar_archive_year_title"/>
+			<key name="title_bar_archive_month_title"/>
+			<key name="title_bar_archive_day_title"/>
+			<key name="title_bar_single_blog_title"/>
+			<key name="product_archive_title_bar_title"/>
+			<key name="product_single_title_bar_title"/>
+			<key name="footer_copyright_text"/>
+			<key name="custom_login_redirect"/>
+			<key name="subscribe_popup_heading"/>
+			<key name="subscribe_popup_description"/>
+			<key name="subscribe_popup_button_text"/>
+			<key name="subscribe_popup_button_url"/>
+			<key name="notice_cookie_messages"/>
+			<key name="notice_cookie_button_text"/>
+			<key name="error404_page_title"/>
+			<key name="error404_page_text"/>
+			<key name="blog_archive_quote_content"/>
+			<key name="search_page_no_results_text"/>
+		</key>
+		<key name="theme_mods_minimog-child">
+			<key name="top_bar_text"/>
+			<key name="top_bar_countdown_prefix_text"/>
+			<key name="top_bar_countdown_button_text"/>
+			<key name="top_bar_countdown_button_url"/>
+			<key name="header_button_text"/>
+			<key name="header_button_link"/>
+			<key name="title_bar_search_title"/>
+			<key name="title_bar_home_title"/>
+			<key name="title_bar_archive_category_title"/>
+			<key name="title_bar_archive_tag_title"/>
+			<key name="title_bar_archive_author_title"/>
+			<key name="title_bar_archive_year_title"/>
+			<key name="title_bar_archive_month_title"/>
+			<key name="title_bar_archive_day_title"/>
+			<key name="title_bar_single_blog_title"/>
+			<key name="product_archive_title_bar_title"/>
+			<key name="product_single_title_bar_title"/>
+			<key name="footer_copyright_text"/>
+			<key name="custom_login_redirect"/>
+			<key name="subscribe_popup_heading"/>
+			<key name="subscribe_popup_description"/>
+			<key name="subscribe_popup_button_text"/>
+			<key name="subscribe_popup_button_url"/>
+			<key name="notice_cookie_messages"/>
+			<key name="notice_cookie_button_text"/>
+			<key name="error404_page_title"/>
+			<key name="error404_page_text"/>
+			<key name="blog_archive_quote_content"/>
+			<key name="search_page_no_results_text"/>
+		</key>
+	</admin-texts>
+</wpml-config>

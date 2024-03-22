@@ -1,0 +1,6 @@
+.rtl {
+	.lg-outer {
+		// Fix popup not working on rtl.
+		direction: ltr;
+	}
+}

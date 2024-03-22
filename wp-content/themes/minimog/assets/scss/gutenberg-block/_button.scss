@@ -1,0 +1,38 @@
+.wp-block-button {
+	margin-bottom: 30px;
+
+	.wp-block-button__link {
+		padding: 12px 41px;
+		color: $button-text;
+		background-color: $button-background;
+
+		&:hover {
+			color: $button-hover-text;
+			background-color: $button-hover-background;
+		}
+	}
+
+	&.is-style-outline {
+		.wp-block-button__link {
+			border-color: currentColor;
+			background-color: transparent;
+			padding: 10px 41px;
+
+			&:not(.has-text-color) {
+				color: $button-background;
+			}
+
+			&:hover {
+				color: $button-hover-text;
+				border-color: $button-hover-border;
+				background-color: $button-hover-background;
+			}
+		}
+	}
+
+	&.is-style-squared {
+		.wp-block-button__link {
+			border-radius: 0;
+		}
+	}
+}

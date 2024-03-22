@@ -1,0 +1,40 @@
+.gift-cards_form {
+	> h3 {
+		font-size: 24px;
+		margin: 20px 0 15px;
+	}
+}
+
+.gift-card-content-editor.step-content h5 {
+	font-size: 16px;
+	margin-top: 2em;
+}
+
+.gift-card-content-editor.step-appearance {
+	.ywgc-design-list ul {
+		line-height: 1;
+	}
+}
+
+.ywgc-amount-buttons {
+	margin: 0 10px 10px 0;
+
+	.amount {
+		color: inherit !important;
+	}
+}
+
+.gift-cards-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	h3 {
+		width: 100%;
+		font-size: 24px;
+		margin-top: 20px;
+	}
+}
+
+.gift_card_template_button {
+	margin-top: 30px;
+}

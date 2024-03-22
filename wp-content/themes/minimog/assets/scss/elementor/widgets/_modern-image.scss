@@ -1,0 +1,17 @@
+.tm-modern-image {
+	line-height: 1;
+
+	.minimog-box {
+		display: flex;
+	}
+
+	.widget-image-caption {
+		color: #000;
+	}
+
+	// Fix overlap on lazy loading.
+	.minimog-image {
+		max-width: 100%;
+		overflow: hidden;
+	}
+}

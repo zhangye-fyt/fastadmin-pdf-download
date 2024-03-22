@@ -1,0 +1,1 @@
+a:1:{s:9:"size-text";a:6:{s:12:"attribute_id";s:1:"1";s:14:"attribute_name";s:9:"size-text";s:15:"attribute_label";s:8:"مقاس";s:14:"attribute_type";s:4:"text";s:17:"attribute_orderby";s:10:"menu_order";s:16:"attribute_public";s:1:"0";}}

@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'Minimog-Icon';
+	src: url('../fonts/Minimog-Icon.eot?f0o6jy');
+	src: url('../fonts/Minimog-Icon.eot?f0o6jy#iefix') format('embedded-opentype'),
+	url('../fonts/Minimog-Icon.ttf?f0o6jy') format('truetype'),
+	url('../fonts/Minimog-Icon.woff?f0o6jy') format('woff'),
+	url('../fonts/Minimog-Icon.svg?f0o6jy#Minimog-Icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="minimog-icon-"], [class*=" minimog-icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'Minimog-Icon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+}
+
+.minimog-icon-rotate-90 {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg)
+}
+
+.minimog-icon-rotate-180 {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.minimog-icon-rotate-270 {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg)
+}
+
+.minimog-icon-desktop:before {
+	content: "\f108";
+}
+
+.minimog-icon-laptop:before {
+	content: "\f109";
+}
+
+.minimog-icon-tablet:before {
+	content: "\f10a";
+}
+
+.minimog-icon-mobile:before {
+	content: "\f10b";
+}
+
+.minimog-icon-desktop-alt:before {
+	content: "\f390";
+}
+
+.minimog-icon-mobile-alt:before {
+	content: "\f3cd";
+}
+
+.minimog-icon-mobile-android:before {
+	content: "\f3ce";
+}
+
+.minimog-icon-mobile-android-alt:before {
+	content: "\f3cf";
+}
+
+.minimog-icon-tablet-alt:before {
+	content: "\f3fa";
+}
+
+.minimog-icon-tablet-android:before {
+	content: "\f3fb";
+}
+
+.minimog-icon-tablet-android-alt:before {
+	content: "\f3fc";
+}

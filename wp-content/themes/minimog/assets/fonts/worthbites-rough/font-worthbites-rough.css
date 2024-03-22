@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: WorthbitesRough;
+	src: url(Worthbites-Rough.otf) format('truetype'),
+	url(Worthbites-Rough.ttf) format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}

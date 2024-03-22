@@ -1,0 +1,98 @@
+.minimog-wp-widget-product-banner {
+	padding: 0 !important;
+
+	.banner-product-wrapper {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: block;
+		padding: 30px;
+		border-radius: inherit;
+		min-height: 380px;
+	}
+
+	.banner-product-thumbnail {
+		position: relative;
+	}
+
+	.banner-product-title {
+		font-size: 30px;
+		line-height: 1.5;
+		margin: 0;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.banner-product-category {
+		font-size: 15px;
+		text-transform: capitalize;
+		color: $heading-color;
+	}
+
+	.product-banner-badge {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 1;
+		background: #ffd55a;
+		color: $heading-color;
+		height: 74px;
+		width: 74px;
+		border-radius: 50%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		.badge-value {
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 1;
+		}
+
+		.badge-text {
+			margin-top: 4px;
+			font-size: 16px;
+			line-height: 1;
+		}
+	}
+
+	.price,
+	.amount {
+		font-size: 24px;
+		line-height: 1;
+		font-weight: 700;
+
+		ins {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		del {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: .584em;
+			margin-top: 1px;
+
+			&:before {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.price del,
+	del .amount {
+		color: $text-color;
+	}
+
+	.price {
+		margin: 8px 0 0;
+	}
+
+	.product-banner-button {
+		margin: 18px 0 0;
+	}
+}

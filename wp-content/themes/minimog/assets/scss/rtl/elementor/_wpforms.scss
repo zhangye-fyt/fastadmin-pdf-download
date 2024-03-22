@@ -1,0 +1,22 @@
+.wpforms-container {
+	&.minimog-wpforms {
+		// Columns
+		.wpforms-five-sixths,
+		.wpforms-four-sixths,
+		.wpforms-four-fifths,
+		.wpforms-one-fifth,
+		.wpforms-one-fourth,
+		.wpforms-one-half,
+		.wpforms-one-sixth,
+		.wpforms-one-third,
+		.wpforms-three-fourths,
+		.wpforms-three-fifths,
+		.wpforms-three-sixths,
+		.wpforms-two-fourths,
+		.wpforms-two-fifths,
+		.wpforms-two-sixths,
+		.wpforms-two-thirds {
+			margin-right: 0 !important;
+		}
+	}
+}

@@ -1,0 +1,278 @@
+.elementor-widget-tm-testimonial-slideshow {
+	.minimog-testimonial-slideshow {
+		display: flex;
+		flex-wrap: wrap;
+		overflow: hidden;
+	}
+
+	.tm-swiper {
+		width: 50%;
+		order: 2;
+	}
+
+	.minimog-testimonial-pagination {
+		min-height: 500px;
+	}
+
+	.minimog-main-swiper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #928277;
+		padding: 100px 50px 55px;
+	}
+
+	// Dots
+	.tm-swiper {
+		.swiper-pagination-wrap {
+			height: auto;
+			margin-top: 77px;
+			justify-content: flex-start;
+			align-items: flex-end;
+		}
+
+		&.pagination-style-03 .fraction,
+		&.pagination-style-06 .fraction {
+			font-weight: $body-font-weight-medium;
+		}
+	}
+
+	// Content
+	.tm-star-rating {
+		margin-bottom: 32px;
+		line-height: 1.6;
+
+		> span {
+			font-size: 16px;
+
+			+ span {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.title {
+		font-size: 34px;
+		line-height: 1.56;
+		margin-bottom: 10px;
+	}
+
+	.text {
+		font-size: 18px;
+		line-height: 1.56;
+		margin-bottom: 42px;
+	}
+
+	.cite {
+		.name {
+			font-size: 15px;
+			font-weight: $heading-font-weight-bold;
+			line-height: 1.53;
+			text-transform: uppercase;
+			margin-bottom: 11px;
+		}
+
+		.position {
+			font-size: 14px;
+			display: inline-block;
+		}
+	}
+}
+
+.minimog-testimonial-slideshow-style-2 {
+	.minimog-main-swiper {
+		background-color: #F3F6FE;
+	}
+
+	.tm-swiper {
+		.swiper-pagination-wrap {
+			justify-content: center;
+		}
+	}
+
+	.content-wrap {
+		text-align: center;
+	}
+
+	.tm-star-rating {
+		.tm-star-full {
+			color: #EEB31A;
+		}
+
+		> span {
+			font-size: 17px;
+		}
+	}
+
+	.text {
+		color: #000;
+		font-size: 40px;
+		font-family: $heading-font-family;
+		line-height: 1.4;
+	}
+}
+
+.minimog-testimonial-slideshow-skin-light {
+	.tm-star-rating .tm-star-full,
+	.tm-star-rating .tm-star-half:after,
+	.title,
+	.text,
+	.cite .name,
+	.cite .position{
+		color: #fff;
+	}
+
+	.tm-star-rating {
+		.tm-star-empty {
+			color: rgba(255,255,255,0.3);
+		}
+	}
+}
+
+.minimog-testimonial-slideshow-layout-reverse {
+	.minimog-main-swiper {
+		order: 3;
+	}
+}
+
+.minimog-testimonial-slideshow-cite-layout-inline {
+	.name {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	.position {
+		display: inline-block;
+		margin: 0 0 0 13px;
+	}
+}
+
+.minimog-testimonial-slideshow--no-image {
+	.minimog-testimonial-slideshow {
+		display: block;
+	}
+
+	.tm-swiper {
+		width: 100%;
+	}
+}
+
+.minimog-testimonial-pagination {
+	* {
+		height: 100%;
+	}
+
+	.slide-thumbnail {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+// Section stretched
+.elementor-top-section.elementor-section-stretched {
+	.minimog-testimonial-slideshow--content-boxed,
+	.minimog-testimonial-slideshow--content-wide {
+		.minimog-main-swiper {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.content-wrap {
+			padding-right: 100px;
+			padding-left: 0;
+		}
+
+		&.minimog-testimonial-slideshow-layout-reverse {
+			.content-wrap {
+				padding-left: 100px;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(tablet-extra) {
+	.elementor-widget-tm-testimonial-slideshow {
+		.minimog-main-swiper {
+			padding: 40px;
+		}
+
+		.tm-swiper {
+			.swiper-pagination-wrap {
+				margin-top: 45px;
+			}
+		}
+
+		.content-wrap {
+			padding-left: 0;
+			padding-right: 50px;
+		}
+
+		.title {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		.text {
+			font-size: 16px;
+		}
+	}
+
+	.elementor-top-section.elementor-section-stretched {
+		.minimog-testimonial-slideshow--content-boxed,
+		.minimog-testimonial-slideshow--content-wide {
+			.content-wrap {
+				padding-right: 50px;
+				padding-left: 0;
+			}
+
+			&.minimog-testimonial-slideshow-layout-reverse {
+				.content-wrap {
+					padding-left: 50px;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(tablet) {
+	.elementor-widget-tm-testimonial-slideshow {
+		.minimog-testimonial-slideshow {
+			flex-direction: column;
+		}
+
+		.tm-swiper {
+			width: 100%;
+
+			.swiper-pagination-wrap {
+				margin-top: 30px;
+			}
+		}
+
+		.minimog-main-swiper {
+			padding: 30px;
+		}
+
+		.minimog-testimonial-pagination {
+			order: 1;
+			height: 350px;
+		}
+
+		.title {
+			font-size: 22px;
+		}
+
+		.text {
+			font-size: 14px;
+			margin-bottom: 30px;
+		}
+
+		.cite {
+			.name {
+				font-size: 14px;
+			}
+		}
+	}
+}

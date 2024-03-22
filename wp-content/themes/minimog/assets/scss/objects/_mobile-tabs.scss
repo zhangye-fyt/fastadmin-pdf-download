@@ -1,0 +1,98 @@
+.page-mobile-tabs {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .11);
+	z-index: $mobile-tab-index;
+
+	.tabs {
+		display: flex;
+	}
+}
+
+.mobile-tab-link {
+	--icon-badge-size: 20px;
+	--icon-badge-font-size: 11px;
+	@extend %NormalTransition;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 0px;
+	padding: 5px;
+	min-height: 55px;
+	position: relative;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 1;
+	border-right: 1px solid #eee;
+
+	svg {
+		position: relative;
+		z-index: 2;
+		display: inline-block;
+		vertical-align: middle;
+		width: 1em;
+		height: 1em;
+
+		*[stroke]:not([stroke='none']) {
+			stroke: currentColor;
+		}
+
+		*[fill]:not([fill='none']) {
+			fill: currentColor;
+		}
+	}
+
+	> .icon {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.icon-badge {
+		position: absolute;
+		top: -11px;
+		right: -11px;
+		padding: 0 3px;
+		min-width: var(--icon-badge-size);
+		height: var(--icon-badge-size);
+		border-radius: var(--icon-badge-size);
+		line-height: var(--icon-badge-size);
+		color: #fff;
+		background: $primary-color;
+		content: attr(data-count);
+		font-weight: $body-font-weight-bold;
+		font-size: var(--icon-badge-font-size);
+		text-align: center;
+		z-index: 3;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-has-mobile-tabs {
+		.page-mobile-tabs {
+			display: block;
+		}
+
+		.site {
+			margin-bottom: 55px;
+		}
+
+		.crisp-client .cc-kv6t .cc-1xry .cc-unoo,
+		.crisp-client .cc-kv6t[data-full-view='true'] .cc-1xry .cc-unoo {
+			bottom: 65px !important;
+		}
+
+		.page-scroll-up {
+			bottom: 0;
+
+			&.show {
+				bottom: 75px;
+			}
+		}
+	}
+}

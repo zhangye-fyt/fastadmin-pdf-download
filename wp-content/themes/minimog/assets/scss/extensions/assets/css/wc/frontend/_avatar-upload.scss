@@ -1,0 +1,99 @@
+.my-account-profile {
+	position: relative;
+
+	.avatar {
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+		width: 100px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.my-avatar {
+		position: relative;
+	}
+
+	.btn-toggle-avatar-upload-menu {
+		color: #fff;
+		font-size: 14px;
+		line-height: 1;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgba(0, 0, 0, .3);
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 5px 0;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, .5);
+		}
+
+		&.updating-icon {
+			&:before {
+				margin: 0;
+			}
+
+			i {
+				display: none;
+			}
+		}
+	}
+}
+
+.minimog-user-profile {
+	.tm_user_avatar {
+		display: none;
+	}
+
+	a {
+		color: #fff;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+		}
+	}
+}
+
+.minimog-user-profile__action {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 100px;
+	background-color: #000;
+	z-index: -1;
+	opacity: 0;
+	transform: translateX(-50%);
+
+	a {
+		display: flex;
+		align-items: center;
+		padding: 3px 10px;
+
+		&:hover,
+		&:focus {
+			background-color: rgba(255, 255, 255, .3);
+		}
+	}
+
+	.action-icon {
+		text-align: center;
+		font-size: 14px;
+		min-width: 20px;
+		display: block;
+		line-height: 1;
+		margin: 0 4px 0 0;
+	}
+
+	&.active {
+		z-index: 20;
+		opacity: 1;
+	}
+}

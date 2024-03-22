@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'GeezaPro';
+	src: url('Geeza-Pro-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'GeezaPro';
+	src: url('Geeza-Pro-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}

@@ -1,0 +1,40 @@
+.tm-counter {
+	width: 100%;
+	max-width: 100%;
+	@extend %NormalTransition;
+
+	&__number-wrapper {
+		display: flex;
+		font-size: 48px;
+		line-height: 1.1667;
+		font-weight: $body-font-weight-medium;
+		color: $primary-color;
+		@extend %NormalTransition;
+	}
+
+	&__heading-wrap {
+		margin: 2px 0 0;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	&__heading {
+		font-size: 18px;
+		line-height: 1.5555;
+		color: $heading-color;
+		margin: 0;
+		@extend %NormalTransition;
+	}
+}
+
+@include elementor-breakpoint-down(mobile-extra) {
+	.tm-counter {
+		&__number-wrapper {
+			font-size: 34px;
+		}
+
+		&__heading {
+			font-size: 16px;
+		}
+	}
+}

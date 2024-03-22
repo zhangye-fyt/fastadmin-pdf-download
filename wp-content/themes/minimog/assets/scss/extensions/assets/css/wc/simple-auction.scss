@@ -1,0 +1,143 @@
+@import '../base';
+
+.single-product {
+	.entry-summary {
+		.auction-ajax-change {
+			color: $heading-color;
+			margin-top: 15px;
+
+			p {
+				margin-bottom: 10px;
+			}
+		}
+
+		.auction-time {
+			margin-bottom: 10px;
+		}
+
+		.countdown_row {
+			display: flex;
+		}
+
+		.countdown_section {
+			width: 80px !important;
+			height: 80px;
+			margin-right: 10px;
+			background-color: #fee;
+			border: 1px solid #ffc8c8;
+			border-radius: $box-rounded;
+
+			color: $primary-color;
+			font-size: 12px;
+			line-height: 1;
+			letter-spacing: .55px;
+			text-transform: uppercase;
+			font-weight: 500;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.countdown_amount {
+				font-size: 34px;
+			}
+		}
+
+		form.auction_form {
+			display: flex;
+			padding-bottom: 20px;
+			margin-top: 15px;
+
+			div.quantity {
+				width: 180px;
+				margin-right: 20px;
+
+				.plus,
+				.minus {
+					position: absolute;
+					box-shadow: none;
+					border: 0;
+					background: none !important;
+					padding: 0;
+					width: var(--size);
+					height: var(--size);
+					min-width: 26px;
+					max-width: 33.333333%;
+					border-radius: $form-input-rounded;
+					font-size: 0;
+					transform: none;
+					user-select: none;
+					touch-action: manipulation;
+					color: $heading-color;
+
+					&:before {
+						@extend %NormalTransition;
+						@extend %FontAwesomeLight;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						font-size: var(--icon-size);
+						color: $link-color;
+					}
+
+					&:hover {
+						background-color: transparent;
+						box-shadow: none;
+						border: 0;
+						color: $text-color;
+					}
+				}
+
+				.plus {
+					top: 0;
+					right: 0;
+
+					&:before {
+						content: $fa-plus;
+					}
+				}
+
+				.minus {
+					top: 0;
+					left: 0;
+
+					&:before {
+						content: $fa-minus;
+					}
+				}
+			}
+		}
+	}
+
+	.sealed-text {
+		a {
+			font-weight: 700;
+		}
+	}
+
+	.single_add_to_cart_button {
+		.amount {
+			color: inherit;
+			font-weight: inherit;
+		}
+	}
+
+	.wsawl-link {
+		display: flex;
+		align-items: center;
+	}
+}
+
+// Archive Page
+.minimog-product {
+	.product-type-auction {
+		.price {
+			font-size: initial;
+
+			.auction {
+				color: $text-lighten-color;
+				font-weight: $heading-font-weight-secondary;
+			}
+		}
+	}
+}

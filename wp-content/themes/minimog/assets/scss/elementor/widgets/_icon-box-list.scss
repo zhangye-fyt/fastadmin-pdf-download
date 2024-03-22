@@ -1,0 +1,155 @@
+.tm-icon-box-list {
+	@extend %NormalTransition;
+	position: relative;
+
+	.icon,
+	&__heading {
+		@extend %NormalTransition;
+	}
+
+	// Heading
+	&__heading {
+		color: $heading-color;
+		font-size: 24px;
+		font-weight: $heading-font-weight-secondary;
+		line-height: 1.54;
+		margin: 0;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	// List
+	.box-list {
+		list-style: none;
+		padding: 0;
+		margin: 14px 0 0;
+
+		&__item {
+			font-size: 16px;
+			line-height: 1.5;
+
+			+ .box-list__item {
+				margin-top: 18px;
+			}
+		}
+
+		&__text {
+			@extend %NormalTransition;
+		}
+	}
+
+	// Icon
+	.tm-icon-box-list__wrapper {
+		position: relative;
+		z-index: 1;
+	}
+
+	.icon-box-content {
+		flex-grow: 1;
+	}
+
+	.minimog-icon {
+		font-size: 40px;
+		color: $primary-color;
+	}
+
+	.minimog-icon-view {
+		position: relative;
+	}
+
+	.minimog-icon-badge {
+		font-size: 16px;
+		line-height: 1;
+		font-weight: 700;
+		color: #fff;
+		border-radius: 50%;
+		position: absolute;
+		background-color: $primary-color;
+		top: 0;
+		right: 0;
+		transform: translate(50%, -50%);
+		display: flex;
+		align-items: center;
+		padding: 4px 7px;
+	}
+}
+
+@media (min-width: 768px) {
+	.elementor-widget-tm-icon-box-list {
+		&.elementor-position-left,
+		&.elementor-position-right {
+			.tm-icon-box-list__wrapper {
+				display: flex;
+			}
+
+			.minimog-icon-wrap {
+				display: inline-flex;
+				flex: 0 0 auto;
+			}
+		}
+
+		&.elementor-position-right {
+			.tm-icon-box-list__wrapper {
+				text-align: right;
+				flex-direction: row-reverse;
+			}
+
+			.minimog-icon-wrap {
+				margin-left: 29px;
+			}
+		}
+
+		&.elementor-position-left {
+			.tm-icon-box-list__wrapper {
+				text-align: left;
+				flex-direction: row;
+			}
+
+			.minimog-icon-wrap {
+				margin-right: 29px;
+			}
+		}
+
+		&.elementor-position-top {
+			.minimog-icon-wrap {
+				margin-bottom: 15px;
+			}
+		}
+
+		&.elementor-vertical-align-top {
+			.tm-icon-box-list__wrapper {
+				align-items: flex-start;
+			}
+		}
+
+		&.elementor-vertical-align-middle {
+			.tm-icon-box-list__wrapper {
+				align-items: center;
+			}
+		}
+
+		&.elementor-vertical-align-bottom {
+			.tm-icon-box-list__wrapper {
+				align-items: flex-end;
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(tablet) {
+	.tm-icon-box-list {
+		// Heading
+		&__heading {
+			font-size: 22px;
+		}
+
+		// List
+		.box-list {
+			&__item {
+				font-size: 14px;
+			}
+		}
+	}
+}

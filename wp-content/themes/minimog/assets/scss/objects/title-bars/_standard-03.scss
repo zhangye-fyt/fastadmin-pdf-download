@@ -1,0 +1,23 @@
+.page-title-bar-standard-03 {
+	margin: 0 0 39px;
+	--content-padding: 55px;
+	--breadcrumb-align: flex-start;
+
+	.page-title-bar-content {
+		justify-content: center;
+		text-align: center;
+		padding: 21px 0;
+	}
+
+	.heading {
+		max-width: 970px;
+		margin: 0 auto;
+	}
+
+	.page-breadcrumb {
+		display: flex;
+		align-items: center;
+		padding: 3px 0;
+		min-height: var(--breadcrumb-height, 60px);
+	}
+}

@@ -1,0 +1,529 @@
+.dokan-store {
+	.profile-info-cover {
+		position: relative;
+		height: 390px;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.profile-info-summery {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		z-index: 1;
+		padding: 0 0 30px;
+
+		.profile-info {
+			flex: 0 0 72%;
+			max-width: 72%;
+			padding: 41px 0 20px;
+		}
+	}
+
+	.store-social-wrapper {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	.store-social {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0 18px 18px 0;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			font-size: 18px;
+			background: #fff;
+			color: $heading-color;
+			margin: 5px;
+
+			&:hover {
+				background: $button-hover-background;
+				color: $button-hover-text;
+			}
+		}
+	}
+
+	.profile-info-head {
+		--avatar-size: 130px;
+		flex: 0 0 28%;
+		max-width: 28%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.profile-img {
+		width: var(--avatar-size);
+		border: 5px solid #fff;
+		box-shadow: 0 20px 24px rgba(0, 0, 0, .1);
+		margin-top: calc(var(--avatar-size) / -2);
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.profile-img-circle {
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	.store-name {
+		font-size: 30px;
+		margin: 14px 0 0;
+	}
+
+	.profile-info-summery-wrapper {
+		background: #f2f2f2;
+		padding: 0 30px;
+	}
+
+	.dokan-store-info {
+		--gutter-x: 15px;
+		--gutter-y: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		margin: 0 calc(-1 * var(--gutter-x));
+		padding: 0;
+		color: $heading-color;
+
+		> * {
+			flex: 0 0 33.333333%;
+			max-width: 33%;
+			padding-left: var(--gutter-x);
+			padding-right: var(--gutter-x);
+			margin: 0 0 var(--gutter-y);
+		}
+	}
+
+	.store-info-heading {
+		font-size: 16px;
+		font-weight: $body-font-weight-medium;
+		margin: 0 0 4px;
+	}
+}
+
+.dokan-profile-frame-wrapper {
+	margin: 0 0 100px;
+	position: relative;
+	z-index: 2;
+}
+
+.dokan-store-contact {
+	background: #f2f2f2;
+	padding: 23px 17px 27px;
+	border-radius: 5px;
+	--minimog-color-form-text: #000;
+	--minimog-color-form-background: #fff;
+	--minimog-color-form-border: #fff;
+
+	.dokan-btn {
+		float: none !important;
+		width: 100%;
+		margin: 20px 0 0;
+	}
+
+	.dokan-form-group {
+		margin: 0 0 15px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	.dokan-privacy-policy-text {
+		margin: 15px 0 0;
+	}
+}
+
+.dokan-store-tabs-wrap {
+	--tab-title-spacing: 40px;
+	--tab-content-spacing: 43px;
+	position: relative;
+	overflow-x: auto;
+	margin: 0 0 var(--tab-content-spacing);
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 1px;
+		height: 1px;
+		background: #eee;
+	}
+}
+
+.dokan-store-tabs {
+	padding: 0 0 2px;
+
+	> ul {
+		display: inline-flex;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			margin: 0;
+			position: relative;
+			cursor: pointer;
+			flex-shrink: 0;
+			display: flex;
+			align-items: center;
+			padding: 8px 0 10px;
+
+			a {
+				font-size: 24px;
+				display: block;
+			}
+
+			+ li {
+				margin-left: var(--tab-title-spacing);
+			}
+
+			&:before {
+				transition: width .25s ease-in-out;
+				content: '';
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background: var(--minimog-color-heading);
+				z-index: 1;
+			}
+
+			&.active {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.modal-store-open-times {
+	--modal-width: 370px;
+}
+
+.vendor-store-times {
+	.store-times-heading {
+		margin: 0 0 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		h4 {
+			font-size: 18px;
+			margin: 0;
+		}
+	}
+
+	.store-time-tags {
+		display: flex;
+		font-size: 15px;
+		margin-bottom: 12px;
+	}
+
+	.store-days {
+		flex: 2.3;
+	}
+
+	.current_day,
+	.current_time {
+		color: $heading-color;
+		font-weight: $body-font-weight-medium;
+	}
+
+	.store-times {
+		flex: 4;
+	}
+
+	.store-open,
+	.store-close {
+		cursor: pointer;
+		display: inline-block;
+		padding: 2px 3px;
+		transition: .5s ease;
+		list-style: none;
+		border-radius: 5px;
+		text-decoration: none;
+	}
+
+	.store-close {
+		color: #d07272;
+		background-color: #f8e8e7;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding: 1px 12px;
+		text-align: center;
+		font-weight: $body-font-weight-medium;
+	}
+
+	.store-time-tags:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.dokan-store-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 -5px;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 5px;
+
+		button {
+			margin: 0 !important;
+			min-width: 100px;
+		}
+	}
+}
+
+.dokan-store-products-filter-area {
+	margin-bottom: 30px;
+
+	.product-name-search {
+		width: 230px;
+	}
+
+	#dokan-store-products-search-result {
+		display: none;
+		position: absolute;
+		width: 100%;
+		background: #fff;
+		z-index: 15;
+		transform: translateY(-1px);
+		max-width: 349px;
+		max-height: 400px;
+		overflow-y: auto;
+		overflow-x: hidden;
+		top: 42px;
+	}
+
+	#dokan-store-products-search-result ul {
+		list-style: none;
+		margin: 0 !important;
+		padding: 15px;
+	}
+
+	#dokan-store-products-search-result li {
+		display: block;
+		padding: 8px 0;
+		position: relative;
+		border-bottom: 1px dashed #e0e0e0;
+		margin-left: 0;
+	}
+
+	#dokan-store-products-search-result li:last-child {
+		border-bottom: none;
+	}
+
+	#dokan-store-products-search-result a {
+		display: table;
+		width: 100%;
+	}
+
+	#dokan-store-products-search-result a > * {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-image {
+		width: 40px;
+		max-width: 40px;
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-data {
+		padding-left: 20px;
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-data div:not(.dokan-ls-product-categories) {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-data .dokan-ls-product-price {
+		position: absolute;
+		top: 12px;
+		right: 0;
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-data .dokan-ls-product-stock {
+		padding: 4px 8px;
+		background: #eee;
+		border-radius: 4px;
+		position: absolute;
+		bottom: 10px;
+		right: 0;
+	}
+
+	#dokan-store-products-search-result h3 {
+		display: block;
+		margin: 0;
+		font-size: 15px;
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-categories span {
+		display: inline-block;
+		margin-right: 4px;
+		font-size: 13px;
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-categories span:after {
+		content: ',';
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-categories span:last-child:after {
+		content: '';
+	}
+
+	#dokan-store-products-search-result .dokan-ls-product-categories span:last-child {
+		margin-right: 0;
+	}
+
+	#dokan-store-products-search-result .product-price {
+		font-size: 14px;
+		font-weight: 700;
+		bottom: 10px;
+		text-align: right;
+	}
+
+	#dokan-store-products-search-result .dokan-ls-sale-price {
+		color: #8f949b;
+		text-decoration: line-through;
+		margin-left: 8px;
+	}
+
+	.dokan-ajax-search-loader {
+		background-image: url(../../dokan/spinner-2x.gif);
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: 25px 25px;
+		z-index: 999;
+	}
+}
+
+.dokan-store-products-ordeby {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.search-store-products {
+		margin: 0 0 0 10px;
+	}
+
+	.orderby {
+		width: 240px;
+		margin: 0 0 0 20px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.dokan-store-tabs {
+		--tab-title-spacing: 80px;
+	}
+
+	.dokan-store {
+		.dokan-store-info {
+			--gutter-x: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.dokan-store {
+		.profile-info-cover {
+			height: 300px;
+		}
+
+		.dokan-store-info {
+			> * {
+				max-width: 33.333333%;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.dokan-store-tabs {
+		> ul li a {
+			font-size: 21px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.dokan-store {
+		.profile-info-cover {
+			height: 200px;
+		}
+
+		.profile-info-head {
+			--avatar-size: 100px;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		.store-name {
+			font-size: 24px;
+		}
+
+		.profile-info-summery .profile-info {
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding: 25px 0 0;
+		}
+	}
+
+	.dokan-profile-frame-wrapper {
+		margin: 0 0 40px;
+	}
+
+	.dokan-store-tabs-wrap {
+		--tab-title-spacing: 20px;
+		--tab-content-spacing: 30px;
+	}
+
+	.dokan-store-tabs {
+		> ul li a {
+			font-size: 18px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.dokan-store {
+		.profile-info-summery-wrapper {
+			padding: 0 20px;
+		}
+
+		.dokan-store-info {
+			> * {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+	}
+}

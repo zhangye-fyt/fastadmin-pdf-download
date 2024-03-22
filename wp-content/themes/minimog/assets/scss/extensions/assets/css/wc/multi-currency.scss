@@ -1,0 +1,188 @@
+@import '../base';
+
+.woocommerce-multi-currency.wmc-sidebar {
+	font-size: 0;
+	font-family: $body-font-family !important;
+	overflow: unset;
+	z-index: 99998;
+
+	&.wmc-right {
+		right: -188px;
+	}
+
+	.wmc-title {
+		display: none;
+		font-family: $body-font-family !important;
+		font-weight: $body-font-weight;
+		font-size: 16px;
+		text-transform: capitalize;
+		padding: 15px 10px 15px 19px;
+		text-align: start;
+		margin: 0 -9px 15px -11px !important;
+		background: #000 url(../../woocommerce/currency-title-bg.png) no-repeat 100% 0 !important;
+	}
+
+	.wmc-currency {
+		margin: 0 !important;
+		width: 100% !important;
+		padding: 0 10px;
+		height: 42px !important;
+
+		+ .wmc-currency {
+			margin: 10px 0 0 !important;
+		}
+	}
+
+	.wmc-list-currencies {
+		.wmc-sidebar-open {
+			margin: 10px 0 0;
+			align-items: center;
+			justify-content: center;
+			font-size: 20px;
+			background: #f5f5f5;
+			color: #000;
+
+			&:before {
+				@extend %FontAwesomeLight;
+				content: $fa-plus !important;
+			}
+		}
+	}
+
+	&.style-1 {
+		.wmc-list-currencies {
+			background: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+			width: 245px;
+			padding: 10px 9px 10px;
+			border-radius: 3px 0 0 3px;
+			font-size: $body-font-size;
+			overflow: hidden;
+
+			.wmc-currency {
+				display: inline-flex;
+				background: #f5f5f5 !important;
+				border-radius: 3px;
+
+				span {
+					font-size: 14px;
+					font-weight: $body-font-weight-bold;
+					text-transform: uppercase;
+					width: auto !important;
+					min-width: 38px;
+					text-align: start !important;
+					line-height: 42px !important;
+					color: #000 !important;
+				}
+
+				.wmc-currency-content-left {
+					margin: 0 5px 0 0;
+				}
+
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					font-size: 14px;
+					font-weight: $body-font-weight;
+					text-transform: none;
+					color: $text-color !important;
+					line-height: 42px !important;
+				}
+
+				&.wmc-active {
+					background: #f6e8e3 !important;
+
+					span {
+						color: #d63e2f !important;
+					}
+
+					a {
+						color: #000 !important;
+					}
+				}
+
+				&:hover {
+					a {
+						color: #000 !important;
+					}
+				}
+			}
+
+			.wmc-title {
+				width: auto;
+			}
+		}
+
+		&.wmc-hover {
+			.wmc-list-currencies {
+				box-shadow: -10px 10px 26px rgba(0, 0, 0, .08);
+				padding: 0 9px 15px 11px;
+				border-radius: 15px 0 0 3px;
+			}
+
+			&.wmc-collapse {
+				.wmc-currency {
+					display: inline-flex !important;
+				}
+			}
+		}
+	}
+
+	&.wmc-collapse .wmc-list-currencies .wmc-sidebar-open {
+		display: flex;
+	}
+}
+
+.elementor-editor-active {
+	.woocommerce-multi-currency.wmc-sidebar {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.woocommerce-multi-currency.wmc-sidebar.wmc-hover {
+		cursor: url(../../images/cursor/light-close.png) 16 16, pointer;
+		background: rgba(0, 0, 0, .5);
+	}
+
+	.woocommerce-multi-currency.wmc-sidebar .wmc-list-currencies .wmc-currency:not(.wmc-active),
+	.woocommerce-multi-currency.wmc-sidebar.wmc-hover .wmc-list-currencies .wmc-sidebar-open {
+		display: none;
+	}
+
+	.woocommerce-multi-currency.wmc-sidebar {
+		&.wmc-hover {
+			.wmc-list-currencies {
+				.wmc-currency {
+					display: inline-flex !important;
+				}
+			}
+
+			&.style-1 {
+				.wmc-list-currencies {
+					border-radius: 15px 15px 3px 3px;
+					//padding: 0 10px 15px;
+				}
+			}
+		}
+	}
+
+	.woocommerce-multi-currency.wmc-sidebar.wmc-mobile-no-collapse .wmc-list-currencies {
+		.wmc-currency {
+			display: inline-flex !important;
+		}
+
+		.wmc-sidebar-open {
+			display: none;
+		}
+	}
+
+	.woocommerce-multi-currency.wmc-sidebar {
+		&.style-1 {
+			.wmc-list-currencies {
+				display: block;
+			}
+		}
+	}
+}

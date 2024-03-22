@@ -1,0 +1,13 @@
+.tm-testimonial-carousel {
+	&--layout-01 {
+		.swiper-slide {
+			padding-bottom: 30px;
+			padding-top: 30px;
+			transition: all .3s ease;
+
+			&:hover {
+				transform: translate3d(0,-10px,0);
+			}
+		}
+	}
+}

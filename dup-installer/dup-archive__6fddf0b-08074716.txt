@@ -1,0 +1,715 @@
+{
+    "dup_type": "lite",
+    "created": "2024-02-08 07:47:16",
+    "version_dup": "1.5.8.1",
+    "version_wp": "6.3.2",
+    "version_db": "5.7.26",
+    "version_php": "7.4.3",
+    "version_os": "WINNT",
+    "blogname": "cctvwpmb",
+    "exportOnlyDB": 0,
+    "secure_on": 0,
+    "secure_pass": "$2a$08$LN7t3uTO6ojaAy4DVlP3r.Z4c.ARBIODUsvkHHmHnv1AaAwTdmnF.",
+    "dbhost": null,
+    "dbname": null,
+    "dbuser": null,
+    "cpnl_host": null,
+    "cpnl_user": null,
+    "cpnl_pass": null,
+    "cpnl_enable": null,
+    "wp_tableprefix": "wp_",
+    "mu_mode": 0,
+    "mu_generation": 0,
+    "mu_siteadmins": [
+        "admin"
+    ],
+    "subsites": [
+        {
+            "id": 1,
+            "domain": "www.cctvwpmb.com",
+            "path": "\/",
+            "blogname": "cctvwpmb",
+            "blog_prefix": "wp_",
+            "filteredTables": [],
+            "adminUsers": [
+                {
+                    "ID": "1",
+                    "user_login": "adminc",
+                    "id": "1"
+                }
+            ],
+            "fullHomeUrl": "http:\/\/www.cctvwpmb.com",
+            "fullSiteUrl": "http:\/\/www.cctvwpmb.com",
+            "uploadPath": "wp-content\/uploads",
+            "fullUploadPath": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/uploads",
+            "fullUploadSafePath": "D:\/phpstudy_pro\/WWW\/wp\/wp-content\/uploads",
+            "fullUploadUrl": "http:\/\/www.cctvwpmb.com\/wp-content\/uploads",
+            "filteredPaths": []
+        }
+    ],
+    "main_site_id": 1,
+    "mu_is_filtered": false,
+    "license_limit": 0,
+    "license_type": 0,
+    "dbInfo": {
+        "buildMode": "PHP",
+        "charSetList": [
+            "utf8mb4",
+            "utf8"
+        ],
+        "collationList": [
+            "utf8_general_ci",
+            "utf8mb4_unicode_520_ci"
+        ],
+        "engineList": [
+            "MyISAM"
+        ],
+        "isTablesUpperCase": 0,
+        "isNameUpperCase": 0,
+        "name": "cctvwpmb",
+        "tablesBaseCount": 52,
+        "tablesFinalCount": 52,
+        "muFilteredTableCount": 0,
+        "tablesRowCount": 724,
+        "tablesSizeOnDisk": 2591779,
+        "tablesList": {
+            "wp_actionscheduler_actions": {
+                "inaccurateRows": 4,
+                "insertedRows": 4,
+                "size": 18884
+            },
+            "wp_actionscheduler_claims": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 3086
+            },
+            "wp_actionscheduler_groups": {
+                "inaccurateRows": 2,
+                "insertedRows": 2,
+                "size": 9276
+            },
+            "wp_actionscheduler_logs": {
+                "inaccurateRows": 10,
+                "insertedRows": 10,
+                "size": 4680
+            },
+            "wp_commentmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 4096
+            },
+            "wp_comments": {
+                "inaccurateRows": 1,
+                "insertedRows": 1,
+                "size": 8520
+            },
+            "wp_duplicator_packages": {
+                "inaccurateRows": 1,
+                "insertedRows": 1,
+                "size": 8760
+            },
+            "wp_e_events": {
+                "inaccurateRows": 1,
+                "insertedRows": 1,
+                "size": 3260
+            },
+            "wp_links": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_options": {
+                "inaccurateRows": 377,
+                "insertedRows": 377,
+                "size": 2226564
+            },
+            "wp_postmeta": {
+                "inaccurateRows": 62,
+                "insertedRows": 62,
+                "size": 14992
+            },
+            "wp_posts": {
+                "inaccurateRows": 27,
+                "insertedRows": 27,
+                "size": 115084
+            },
+            "wp_termmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 4096
+            },
+            "wp_terms": {
+                "inaccurateRows": 19,
+                "insertedRows": 19,
+                "size": 13984
+            },
+            "wp_term_relationships": {
+                "inaccurateRows": 9,
+                "insertedRows": 9,
+                "size": 3261
+            },
+            "wp_term_taxonomy": {
+                "inaccurateRows": 19,
+                "insertedRows": 19,
+                "size": 4832
+            },
+            "wp_usermeta": {
+                "inaccurateRows": 24,
+                "insertedRows": 24,
+                "size": 12184
+            },
+            "wp_users": {
+                "inaccurateRows": 1,
+                "insertedRows": 1,
+                "size": 8320
+            },
+            "wp_wc_admin_notes": {
+                "inaccurateRows": 65,
+                "insertedRows": 65,
+                "size": 29708
+            },
+            "wp_wc_admin_note_actions": {
+                "inaccurateRows": 97,
+                "insertedRows": 97,
+                "size": 24884
+            },
+            "wp_wc_category_lookup": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_wc_customer_lookup": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 2048
+            },
+            "wp_wc_download_log": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_wc_orders": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 4096
+            },
+            "wp_wc_orders_meta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 4096
+            },
+            "wp_wc_order_addresses": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 4096
+            },
+            "wp_wc_order_coupon_lookup": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_wc_order_operational_data": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 2048
+            },
+            "wp_wc_order_product_lookup": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_wc_order_stats": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 4096
+            },
+            "wp_wc_order_tax_lookup": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_wc_product_attributes_lookup": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_wc_product_download_directories": {
+                "inaccurateRows": 2,
+                "insertedRows": 2,
+                "size": 9380
+            },
+            "wp_wc_product_meta_lookup": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 2048
+            },
+            "wp_wc_rate_limits": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 4096
+            },
+            "wp_wc_reserved_stock": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_wc_tax_rate_classes": {
+                "inaccurateRows": 2,
+                "insertedRows": 2,
+                "size": 9288
+            },
+            "wp_wc_webhooks": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_api_keys": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 2048
+            },
+            "wp_woocommerce_attribute_taxonomies": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_downloadable_product_permissions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_log": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_order_itemmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_order_items": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_payment_tokenmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_payment_tokens": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_sessions": {
+                "inaccurateRows": 1,
+                "insertedRows": 1,
+                "size": 4464
+            },
+            "wp_woocommerce_shipping_zones": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_shipping_zone_locations": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_shipping_zone_methods": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_tax_rates": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            },
+            "wp_woocommerce_tax_rate_locations": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 1024
+            }
+        },
+        "lowerCaseTableNames": 1,
+        "dbEngine": "MySQL",
+        "version": "5.7.26",
+        "versionComment": "MySQL Community Server (GPL)",
+        "viewCount": 0,
+        "procCount": 0,
+        "funcCount": 0,
+        "triggerList": []
+    },
+    "packInfo": {
+        "packageId": 1,
+        "packageName": "20240208_cctvwpmb",
+        "packageHash": "6fddf0b-08074716",
+        "secondaryHash": "435a043-08074716"
+    },
+    "fileInfo": {
+        "dirCount": 2234,
+        "fileCount": 14815,
+        "size": 110062427
+    },
+    "wpInfo": {
+        "version": "6.3.2",
+        "is_multisite": false,
+        "network_id": 1,
+        "targetRoot": "D:\/phpstudy_pro\/WWW\/wp",
+        "targetPaths": [
+            "D:\/phpstudy_pro\/WWW\/wp"
+        ],
+        "adminUsers": [
+            {
+                "ID": "1",
+                "user_login": "adminc",
+                "id": "1"
+            }
+        ],
+        "configs": {
+            "defines": {
+                "ABSPATH": {
+                    "value": "D:\\phpstudy_pro\\WWW\\wp\/",
+                    "inWpConfig": true
+                },
+                "DB_CHARSET": {
+                    "value": "utf8mb4",
+                    "inWpConfig": true
+                },
+                "DB_COLLATE": {
+                    "value": "",
+                    "inWpConfig": true
+                },
+                "AUTH_KEY": {
+                    "value": "YCXWU5R?WGo433LJxiV26eqT~cmlXDTdx0%o~JYR<tYe`ho2F0$Fjl\/g~B&C] bn",
+                    "inWpConfig": true
+                },
+                "SECURE_AUTH_KEY": {
+                    "value": "@:o%}9-^C,dy~U}9q<_e.TOI8Vw$N;uTD@u#s:bJ}*HcH8k`y5mcNNYOT`BrhyuN",
+                    "inWpConfig": true
+                },
+                "LOGGED_IN_KEY": {
+                    "value": "2?#8#g8q*Z?%?*.8`K!m62c$zx}g.3Mb%KD<=qu0_{602zzSjyF.=xn!`fHGZ<**",
+                    "inWpConfig": true
+                },
+                "NONCE_KEY": {
+                    "value": "~E1K)n09y0`p4aJ2-(>Vx,51f: Vz~C+%N=ns^#-rs[k`016d|gF2\/&Wwb3~sdmZ",
+                    "inWpConfig": true
+                },
+                "AUTH_SALT": {
+                    "value": "l2::VfodUq]}#3_pps-T#6rj `~M-vZ6~[]8 ?y]2N~ktUGl__lH3uAz6nb+~,t)",
+                    "inWpConfig": true
+                },
+                "SECURE_AUTH_SALT": {
+                    "value": "ic~GRIpjIY3:98XTP}9?lRoh@%,`.iZTM ^k.rmqukB6C1 PES?k)@(DyV:Orkyz",
+                    "inWpConfig": true
+                },
+                "LOGGED_IN_SALT": {
+                    "value": "J<s[bE|S^27K|t=ltM<E6Iny,[aZOdoa+Q<<3C*3fsQv(%B3r3v4^6.cPs[ENC;S",
+                    "inWpConfig": true
+                },
+                "NONCE_SALT": {
+                    "value": "~FM_tMyluSSO4fTw>hI;NmGM70bvvRHY~{LJ ,UC=Nlm)kDcaLhZoET+9Rro\/2I_",
+                    "inWpConfig": true
+                },
+                "WP_CONTENT_DIR": {
+                    "value": "D:\\phpstudy_pro\\WWW\\wp\/wp-content",
+                    "inWpConfig": false
+                },
+                "WP_CONTENT_URL": {
+                    "value": "http:\/\/www.cctvwpmb.com\/wp-content",
+                    "inWpConfig": false
+                },
+                "WP_PLUGIN_DIR": {
+                    "value": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "WP_PLUGIN_URL": {
+                    "value": "http:\/\/www.cctvwpmb.com\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "PLUGINDIR": {
+                    "value": "wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "AUTOSAVE_INTERVAL": {
+                    "value": 60,
+                    "inWpConfig": false
+                },
+                "WP_POST_REVISIONS": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "COOKIE_DOMAIN": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "MULTISITE": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG": {
+                    "value": false,
+                    "inWpConfig": true
+                },
+                "SCRIPT_DEBUG": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG_LOG": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG_DISPLAY": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "WP_MEMORY_LIMIT": {
+                    "value": "40M",
+                    "inWpConfig": false
+                },
+                "WP_MAX_MEMORY_LIMIT": {
+                    "value": "256M",
+                    "inWpConfig": false
+                },
+                "WP_CACHE": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_LANG_DIR": {
+                    "value": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/languages",
+                    "inWpConfig": false
+                },
+                "FS_CHMOD_DIR": {
+                    "value": 511,
+                    "inWpConfig": false
+                },
+                "FS_CHMOD_FILE": {
+                    "value": 438,
+                    "inWpConfig": false
+                },
+                "WP_CRON_LOCK_TIMEOUT": {
+                    "value": 60,
+                    "inWpConfig": false
+                },
+                "COOKIEPATH": {
+                    "value": "\/",
+                    "inWpConfig": false
+                },
+                "SITECOOKIEPATH": {
+                    "value": "\/",
+                    "inWpConfig": false
+                },
+                "ADMIN_COOKIE_PATH": {
+                    "value": "\/wp-admin",
+                    "inWpConfig": false
+                },
+                "PLUGINS_COOKIE_PATH": {
+                    "value": "\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "TEMPLATEPATH": {
+                    "value": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/themes\/minimog",
+                    "inWpConfig": false
+                },
+                "STYLESHEETPATH": {
+                    "value": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/themes\/minimog",
+                    "inWpConfig": false
+                },
+                "EMPTY_TRASH_DAYS": {
+                    "value": 30,
+                    "inWpConfig": false
+                },
+                "FORCE_SSL_ADMIN": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WPMU_PLUGIN_DIR": {
+                    "value": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/mu-plugins",
+                    "inWpConfig": false
+                },
+                "WPMU_PLUGIN_URL": {
+                    "value": "http:\/\/www.cctvwpmb.com\/wp-content\/mu-plugins",
+                    "inWpConfig": false
+                },
+                "MUPLUGINDIR": {
+                    "value": "wp-content\/mu-plugins",
+                    "inWpConfig": false
+                }
+            },
+            "realValues": {
+                "siteUrl": "http:\/\/www.cctvwpmb.com",
+                "homeUrl": "http:\/\/www.cctvwpmb.com",
+                "loginUrl": "http:\/\/www.cctvwpmb.com\/wp-login.php",
+                "contentUrl": "http:\/\/www.cctvwpmb.com\/wp-content",
+                "uploadBaseUrl": "http:\/\/www.cctvwpmb.com\/wp-content\/uploads",
+                "pluginsUrl": "http:\/\/www.cctvwpmb.com\/wp-content\/plugins",
+                "mupluginsUrl": "http:\/\/www.cctvwpmb.com\/wp-content\/mu-plugins",
+                "themesUrl": "http:\/\/www.cctvwpmb.com\/wp-content\/themes",
+                "originalPaths": {
+                    "home": "D:\/phpstudy_pro\/WWW\/wp",
+                    "abs": "D:\\phpstudy_pro\\WWW\\wp",
+                    "wpconfig": "D:\/phpstudy_pro\/WWW\/wp",
+                    "wpcontent": "D:\\phpstudy_pro\\WWW\\wp\/wp-content",
+                    "uploads": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/uploads",
+                    "plugins": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/plugins",
+                    "muplugins": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/mu-plugins",
+                    "themes": "D:\\phpstudy_pro\\WWW\\wp\/wp-content\/themes"
+                },
+                "archivePaths": {
+                    "home": "D:\/phpstudy_pro\/WWW\/wp",
+                    "abs": "D:\/phpstudy_pro\/WWW\/wp",
+                    "wpconfig": "D:\/phpstudy_pro\/WWW\/wp",
+                    "wpcontent": "D:\/phpstudy_pro\/WWW\/wp\/wp-content",
+                    "uploads": "D:\/phpstudy_pro\/WWW\/wp\/wp-content\/uploads",
+                    "plugins": "D:\/phpstudy_pro\/WWW\/wp\/wp-content\/plugins",
+                    "muplugins": "D:\/phpstudy_pro\/WWW\/wp\/wp-content\/mu-plugins",
+                    "themes": "D:\/phpstudy_pro\/WWW\/wp\/wp-content\/themes"
+                }
+            }
+        },
+        "plugins": {
+            "akismet\/akismet.php": {
+                "slug": "akismet\/akismet.php",
+                "name": "Akismet Anti-spam: Spam Protection",
+                "version": "5.3",
+                "pluginURI": "https:\/\/akismet.com\/",
+                "author": "Automattic - Anti-spam Team",
+                "authorURI": "https:\/\/automattic.com\/wordpress-plugins\/",
+                "description": "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam<\/strong>. Akismet Anti-spam keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.",
+                "title": "Akismet Anti-spam: Spam Protection",
+                "networkActive": false,
+                "active": false,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "duplicator\/duplicator.php": {
+                "slug": "duplicator\/duplicator.php",
+                "name": "Duplicator",
+                "version": "1.5.8.1",
+                "pluginURI": "https:\/\/duplicator.com\/",
+                "author": "Duplicator",
+                "authorURI": "https:\/\/duplicator.com\/",
+                "description": "Migrate and backup a copy of your WordPress files and database. Duplicate and move a site from one location to another quickly.",
+                "title": "Duplicator",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "elementor\/elementor.php": {
+                "slug": "elementor\/elementor.php",
+                "name": "Elementor",
+                "version": "3.19.1",
+                "pluginURI": "https:\/\/elementor.com\/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash",
+                "author": "Elementor.com",
+                "authorURI": "https:\/\/elementor.com\/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash",
+                "description": "The Elementor Website Builder has it all: drag and drop page builder, pixel perfect design, mobile responsive editing, and more. Get started now!",
+                "title": "Elementor",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "hello.php": {
+                "slug": "hello.php",
+                "name": "Hello Dolly",
+                "version": "1.7.2",
+                "pluginURI": "http:\/\/wordpress.org\/plugins\/hello-dolly\/",
+                "author": "Matt Mullenweg",
+                "authorURI": "http:\/\/ma.tt\/",
+                "description": "This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from <cite>Hello, Dolly<\/cite> in the upper right of your admin screen on every page.",
+                "title": "Hello Dolly",
+                "networkActive": false,
+                "active": false,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "redux-framework\/redux-framework.php": {
+                "slug": "redux-framework\/redux-framework.php",
+                "name": "Redux Framework",
+                "version": "4.4.11",
+                "pluginURI": "http:\/\/wordpress.org\/plugins\/redux-framework",
+                "author": "Team Redux",
+                "authorURI": "https:\/\/redux.io",
+                "description": "Build better sites in WordPress fast!",
+                "title": "Redux Framework",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "woocommerce\/woocommerce.php": {
+                "slug": "woocommerce\/woocommerce.php",
+                "name": "WooCommerce",
+                "version": "8.5.2",
+                "pluginURI": "https:\/\/woo.com\/",
+                "author": "Automattic",
+                "authorURI": "https:\/\/woo.com",
+                "description": "An eCommerce toolkit that helps you sell anything. Beautifully.",
+                "title": "WooCommerce",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            }
+        },
+        "themes": {
+            "minimog": {
+                "slug": "minimog",
+                "themeName": "Minimog",
+                "version": "2.5.9",
+                "themeURI": "https:\/\/minimog.thememove.com",
+                "parentTheme": false,
+                "template": "minimog",
+                "stylesheet": "minimog",
+                "description": "A Complete eCommerce Solution which is built by experts. Unlock the power of your online store today with Minimog!",
+                "author": "ThemeMove",
+                "authorURI": "https:\/\/thememove.com",
+                "tags": [
+                    "editor-style",
+                    "featured-images",
+                    "microformats",
+                    "post-formats",
+                    "rtl-language-support",
+                    "sticky-post",
+                    "threaded-comments",
+                    "translation-ready"
+                ],
+                "isAllowed": true,
+                "isActive": true,
+                "defaultTheme": false
+            }
+        }
+    },
+    "defaultStorageId": -1,
+    "components": [
+        "package_component_db",
+        "package_component_core",
+        "package_component_plugins",
+        "package_component_themes",
+        "package_component_uploads",
+        "package_component_other"
+    ],
+    "opts_delete": "[\"duplicator_ui_view_state\",\"duplicator_package_active\",\"duplicator_settings\",\"duplicator_is_pro_enable_notice_dismissed\"]",
+    "brand": {
+        "name": "Duplicator",
+        "isDefault": true,
+        "logo": "<i class=\"fa fa-bolt fa-sm\"><\/i> Duplicator",
+        "enabled": false,
+        "style": []
+    },
+    "overwriteInstallerParams": {
+        "blogname": {
+            "value": "cctvwpmb"
+        }
+    },
+    "installer_base_name": "installer.php.bak",
+    "installer_backup_name": "20240208_cctvwpmb_6fddf0bab3f1b5334161_20240208074716_installer-backup.php",
+    "package_name": "20240208_cctvwpmb_6fddf0bab3f1b5334161_20240208074716_archive.zip",
+    "package_hash": "6fddf0b-08074716",
+    "package_notes": ""
+}

@@ -1,0 +1,17 @@
+.form-table td fieldset {
+	label.ui-checkboxradio-radio-label {
+		margin: 0 !important;
+	}
+}
+
+.redux-container {
+	.ui-buttonset {
+		.ui-state-active {
+			color: #fff !important;
+		}
+
+		.ui-icon {
+			display: none !important;
+		}
+	}
+}

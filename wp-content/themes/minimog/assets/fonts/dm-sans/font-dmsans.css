@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('DMSans-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('DMSans-Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('DMSans-Medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('DMSans-MediumItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('DMSans-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('DMSans-BoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 700;
+}
