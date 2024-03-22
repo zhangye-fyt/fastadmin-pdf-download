@@ -1,0 +1,16 @@
+::-moz-selection {
+	color: #fff;
+	background-color: $heading-color;
+}
+
+::selection {
+	color: #fff;
+	background-color: $heading-color;
+}
+
+hr {
+	margin-bottom: 1.5em;
+	height: 1px;
+	border: 0;
+	background-color: #ccc;
+}

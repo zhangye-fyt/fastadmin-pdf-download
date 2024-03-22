@@ -1,0 +1,29 @@
+.switcher-language-wrapper--elementor {
+	.wpml-ls {
+		.wpml-ls-item-toggle {
+			padding-right: 0.6em;
+
+			&:after {
+				font-size: 0.8em;
+			}
+		}
+	}
+}
+
+.switcher-language-wrapper--up {
+	.wpml-ls {
+		.wpml-ls-sub-menu {
+			top: auto;
+			bottom: 100%;
+		}
+	}
+}
+
+.switcher-language-wrapper--right {
+	.wpml-ls {
+		.wpml-ls-sub-menu {
+			left: auto;
+			right: 0;
+		}
+	}
+}

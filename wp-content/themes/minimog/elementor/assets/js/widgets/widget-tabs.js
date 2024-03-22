@@ -1,0 +1,1 @@
+!function(n){"use strict";function o(n,t){n.find(".minimog-tabs").each(function(){var n=t(this),o={};n.hasClass("minimog-tabs--nav-type-dropdown")&&(o.navType="dropdown"),n.MinimogTabPanel(o)})}n(window).on("elementor/frontend/init",function(){elementorFrontend.hooks.addAction("frontend/element_ready/tm-tabs.default",o)})}(jQuery);

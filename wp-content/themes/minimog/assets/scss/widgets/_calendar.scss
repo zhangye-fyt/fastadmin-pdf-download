@@ -1,0 +1,38 @@
+.widget_calendar {
+	td,
+	th {
+		padding: 5px;
+		background: #fff;
+		border-color: #eee;
+	}
+
+	.calendar_wrap {
+		overflow-x: auto;
+	}
+
+	caption {
+		font-family: $heading-font-family;
+		font-weight: $heading-font-weight-secondary;
+		color: $heading-color;
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+
+	#today {
+		color: #fff;
+		background: $heading-color;
+
+		a {
+			color: inherit;
+		}
+	}
+}
+
+.wp-calendar-nav {
+	display: flex;
+	align-items: center;
+
+	.pad {
+		flex-grow: 1;
+	}
+}

@@ -1,0 +1,396 @@
+@charset "UTF-8";
+
+
+
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-timer-text-wrap:before, .minimog-sales-countdown-layout-inline .woo-sctr-countdown-timer-text-before:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+}
+
+.woo-sctr-single-product-container.woo-sctr-countdown-hidden {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.woo-sctr-single-product-container {
+  margin: 17px 0 25px !important;
+}
+
+.woo-sctr-single-product-container .woo-sctr-shortcode-countdown-timer-wrap {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.woo-sctr-single-product-container .woo-sctr-countdown-timer-layout {
+  background: transparent;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  text-align: start;
+  display: block;
+}
+
+.single_variation_wrap .woo-sctr-single-product-container {
+  margin: 10px 0 0 !important;
+}
+
+.woo-sctr-shortcode-wrap {
+  padding: 0 !important;
+}
+
+.woo-sctr-progress-bar-wrap-container {
+  margin: 20px 0 0 !important;
+}
+
+.woo-sctr-progress-bar-message {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: var(--minimog-typography-body-font-size) !important;
+  line-height: 24px;
+  margin: 12px 0 0;
+}
+
+.woo-sctr-progress-bar-position-above_progressbar .woo-sctr-progress-bar-message {
+  margin: 0 0 12px;
+}
+
+.woo-sctr-countdown-time-separator,
+.woo-sctr-countdown-value {
+  color: var(--minimog-color-primary) !important;
+}
+
+.progress-bar-message-item .value {
+  color: var(--minimog-color-heading);
+  font-weight: 500;
+}
+
+.woo-sctr-sticky-top {
+  position: static;
+  top: auto;
+  right: auto;
+}
+
+.woo-sctr-countdown-timer {
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+}
+
+.minimog-sales-countdown-layout-box {
+  --number-size: 34px;
+  --separator-size: 10px;
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-value {
+  font-size: var(--number-size) !important;
+  font-weight: 400;
+  line-height: 1 !important;
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-text {
+  font-size: 12px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  line-height: 24px;
+  color: var(--minimog-color-primary) !important;
+  text-align: center;
+  margin: 5px 0 0;
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-text.woo-sctr-datetime-format-position-top {
+  margin: 0 0 5px;
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-time-separator {
+  margin: 0 0 0 10px;
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-timer-text-wrap {
+  position: relative;
+  margin: 0 0 18px;
+  padding: 0 24px 0 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-timer-text-wrap:before {
+  content: "";
+  position: absolute;
+  font-size: 18px;
+  top: 4px;
+  right: 0;
+  color: var(--minimog-color-primary);
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-timer-text-before {
+  color: var(--minimog-color-primary);
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-layout-1 {
+  padding: 0 !important;
+}
+
+.minimog-sales-countdown-layout-box .woo-sctr-countdown-time-separator {
+  font-size: var(--separator-size) !important;
+  font-weight: 500;
+}
+
+.minimog-sales-countdown-layout-box-1 .woo-sctr-countdown-value {
+  border: 1px solid #ffc8c8 !important;
+  background: #fee !important;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 5px !important;
+}
+
+.minimog-sales-countdown-layout-box-2 .woo-sctr-countdown-value {
+  border: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.minimog-sales-countdown-layout-box-2 .woo-sctr-countdown-unit {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ffc8c8;
+  background: #fee;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 5px !important;
+}
+
+.minimog-sales-countdown-layout-box-2 .woo-sctr-countdown-value,
+.minimog-sales-countdown-layout-box-2 .woo-sctr-countdown-text {
+  background: transparent !important;
+}
+
+.minimog-sales-countdown-layout-inline {
+  --number-size: 20px;
+  --separator-size: 20px;
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-countdown-timer-layout {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 10px 11px !important;
+  background: #fee !important;
+  border: 1px solid #ffc8c8;
+  border-radius: 5px;
+  gap: 0;
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-shortcode-countdown-unit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-countdown-value {
+  font-size: var(--number-size) !important;
+  font-weight: 500;
+  line-height: 26px;
+  min-width: 25px;
+  text-align: end;
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-countdown-text {
+  font-size: var(--number-size) !important;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--minimog-color-primary) !important;
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-countdown-time-separator {
+  font-size: var(--separator-size) !important;
+  font-weight: 500;
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-countdown-unit-wrap {
+  line-height: 26px;
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-countdown-timer-text-wrap {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-countdown-timer-text-before {
+  display: block;
+  position: relative;
+  margin: 0 0 0 10px;
+  padding: 0 22px 0 0;
+  color: var(--minimog-color-primary);
+}
+
+.minimog-sales-countdown-layout-inline .woo-sctr-countdown-timer-text-before:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 19px;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-shortcode-countdown-unit-wrap {
+  margin: 0;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-shortcode-countdown-wrap {
+  text-align: start;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-countdown-timer-text-before {
+  line-height: 24px;
+  color: var(--minimog-color-text);
+  padding: 0 !important;
+  margin: 0 0 25px;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-shortcode-countdown-2 {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-shortcode-wrap-wrap {
+  text-align: start !important;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-progress-circle .woo-sctr-first50-bar {
+  background-color: var(--minimog-color-primary) !important;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-value-bar {
+  border-color: var(--minimog-color-primary) !important;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-countdown-time-separator {
+  margin: 0 0 0 10px;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-shortcode-countdown-unit-wrap {
+  margin: 0 0 0 10px;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-progress-circle {
+  --circle-size: 3em;
+  --circle-border-size: 0.25em;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  line-height: var(--circle-size);
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-progress-circle .woo-sctr-countdown-value {
+  line-height: var(--circle-size);
+  width: var(--circle-size);
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-progress-circle.woo-sctr-over50 .woo-sctr-left-half-clipper {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-left-half-clipper {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  clip: rect(0, 3em, 3em, 1.5em);
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-progress-circle.woo-sctr-over50 .woo-sctr-first50-bar {
+  clip: rect(0, 3em, 3em, 1.5em);
+  width: var(--circle-size);
+  height: var(--circle-size);
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-value-bar {
+  clip: rect(0, 1.5em, 3em, 0);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-width: 0.45em;
+}
+
+.minimog-sales-countdown-layout-circle .woo-sctr-progress-circle:after {
+  top: var(--circle-border-size);
+  right: var(--circle-border-size);
+  width: calc(var(--circle-size) - var(--circle-border-size) * 2);
+  height: calc(var(--circle-size) - var(--circle-border-size) * 2);
+}
+
+@media (max-width: 543px) {
+  .minimog-sales-countdown-layout-inline {
+    --number-size: 16px;
+    --separator-size: 16px;
+  }
+  .minimog-sales-countdown-layout-inline .woo-sctr-countdown-timer-text-wrap {
+    font-size: 16px;
+  }
+  .minimog-sales-countdown-layout-inline .woo-sctr-countdown-timer-text-before {
+    padding: 0 17px 0 0;
+  }
+  .minimog-sales-countdown-layout-inline .woo-sctr-countdown-timer-text-before:before {
+    font-size: 16px;
+  }
+  .minimog-sales-countdown-layout-inline .woo-sctr-countdown-value {
+    min-width: 20px;
+  }
+}

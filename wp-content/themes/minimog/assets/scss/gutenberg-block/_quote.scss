@@ -1,0 +1,51 @@
+.wp-block-quote {
+	border: 0 !important;
+	padding: 0 !important;
+
+	&.is-style-large,
+	&.is-large {
+		p {
+			font-size: 1.2em;
+			line-height: 1.2;
+			font-style: inherit;
+		}
+
+		cite {
+			font-size: 16px;
+		}
+
+		cite,
+		footer {
+			text-align: start;
+		}
+	}
+
+	&.has-text-align-right {
+		text-align: end;
+	}
+}
+
+.wp-block-quote cite,
+.wp-block-quote footer,
+.wp-block-quote__citation {
+	font-size: 14px;
+	margin: 36px 0 0;
+
+	br {
+		display: none;
+	}
+}
+
+.wp-block-column {
+	.wp-block-quote {
+		margin: 0 0 30px !important;
+	}
+}
+
+@include elementor-breakpoint-down(tablet-extra) {
+	.wp-block-quote cite,
+	.wp-block-quote footer,
+	.wp-block-quote__citation {
+		margin: 20px 0 0;
+	}
+}

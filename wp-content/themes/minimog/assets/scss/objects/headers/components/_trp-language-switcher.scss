@@ -1,0 +1,119 @@
+/**
+ * Language switcher by TranslatePress
+ */
+.switcher-language-wrapper {
+  .trp-language-switcher {
+	 margin: 0;
+
+	 &:hover {
+		.trp-ls-shortcode-language {
+		  transform: none;
+		  opacity: 1;
+		  visibility: visible;
+		}
+	 }
+
+	 &:focus,
+	 &:hover {
+		.trp-ls-shortcode-current-language {
+		  visibility: visible !important;
+		}
+	 }
+
+	 > div {
+		> a {
+		  display: flex;
+		  align-items: center;
+		  color: var(--header-link-color);
+		  border-radius: 0;
+		  padding: 0;
+		  line-height: 26px;
+
+		  &:hover {
+			 color: var(--header-link-hover-color);
+		  }
+		}
+	 }
+
+	 .trp-flag-image {
+		margin: 0 10px 0 0 !important;
+	 }
+
+	 > div {
+		background: none;
+		border: none;
+	 }
+
+	 // Toggler.
+	 .trp-ls-shortcode-current-language {
+		width: auto !important;
+		padding: 0 10px 0 0;
+
+		&:after {
+		  @extend %FontAwesomeRegular;
+		  content: '\f107';
+		  font-size: 12px;
+		  font-weight: inherit;
+		  position: absolute;
+		  top: 50%;
+		  right: 0;
+		  transform: translateY(-50%);
+		  border: 0 !important;
+		}
+	 }
+
+	 // Sub menu.
+	 .trp-ls-shortcode-language {
+		@extend %NormalTransition;
+		display: block !important;
+		background-color: #fff;
+		box-shadow: 0 20px 30px rgba(0, 0, 0, .12);
+		border-radius: 0;
+		min-width: 170px;
+		padding: 18px 18px 22px;
+		z-index: 4;
+		position: absolute;
+		top: 100%;
+		height: auto;
+		left: auto;
+		right: 0;
+		transform: translateY(20px);
+		opacity: 0;
+		visibility: hidden;
+
+		a {
+		  min-height: 34px;
+		  border-radius: 0;
+		  padding: 4px 12px;
+		  color: $text-color;
+
+		  &:hover {
+			 color: $heading-color;
+			 background: rgba(61, 61, 80, .09);
+		  }
+		}
+
+		.trp-ls-shortcode-disabled-language {
+		  display: none !important;
+		}
+	 }
+  }
+}
+
+.page-top-bar {
+  .switcher-language-wrapper .trp-language-switcher {
+	 .trp-ls-shortcode-language {
+		position: fixed;
+		z-index: 99;
+	 }
+  }
+}
+
+.mobile-menu-switcher-language-wrapper {
+  .trp-language-switcher .trp-ls-shortcode-language {
+	 left: 0;
+	 right: auto;
+	 bottom: 100%;
+	 top: auto !important;
+  }
+}

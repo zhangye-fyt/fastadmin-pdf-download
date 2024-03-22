@@ -1,0 +1,66 @@
+.woocommerce-orders-table-wrap {
+	border-radius: $box-rounded;
+	border: 1px solid $box-grey-background;
+}
+
+.woocommerce-orders-table {
+	margin-bottom: 0;
+	border: 0;
+
+	th {
+		background: $box-grey-background;
+	}
+
+	th,
+	td {
+		border: 0;
+		border-bottom: 1px solid $box-grey-background;
+		border-right: 1px solid $box-grey-background;
+
+		&:last-child {
+			border-right: 0;
+		}
+	}
+
+	tbody {
+		tr {
+			&:last-child {
+				th,
+				td {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.woocommerce-orders-table__cell-order-actions,
+.woocommerce-table--order-downloads {
+	.button {
+		min-width: 130px;
+		line-height: 38px;
+		height: 40px;
+		padding: 0 15px;
+		margin: 3px;
+	}
+}
+
+.woocommerce-customer-details {
+	margin: 40px 0 0;
+}
+
+.woocommerce-orders-table__cell-order-status {
+	font-weight: 500;
+}
+
+.woocommerce-orders-table__row--status-completed {
+	.woocommerce-orders-table__cell-order-status {
+		color: #6cbd7e;
+	}
+}
+
+.woocommerce-view-order {
+	.woocommerce-order-details {
+		margin: 0;
+	}
+}

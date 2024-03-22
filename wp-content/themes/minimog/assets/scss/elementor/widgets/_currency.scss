@@ -1,0 +1,30 @@
+.currency-switcher-menu-wrap--elementor {
+	ul.currency-switcher-menu {
+		padding: 0;
+		margin: 0;
+	}
+	
+	.menu-item-has-children {
+		& > a {
+			padding-right: 0.9em;
+
+			&:after {
+				font-size: 0.8em;
+			}
+		}
+	}
+}
+
+.currency-switcher-menu-wrap--up {
+	.sub-menu {
+		top: auto;
+		bottom: 100%;
+	}
+}
+
+.currency-switcher-menu-wrap--right {
+	.sub-menu {
+		left: auto;
+		right: 0;
+	}
+}

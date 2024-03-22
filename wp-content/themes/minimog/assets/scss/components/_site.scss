@@ -1,0 +1,147 @@
+.site {
+	@extend %NormalTransition;
+	overflow: hidden;
+
+	/**
+	 * Fix Grid Layout broken on update when Browser Scroll toggle
+	 */
+	min-height: 100vh;
+}
+
+body {
+	&:before {
+		@extend %NormalTransition;
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(255, 255, 255, .5);
+		z-index: 9999999;
+		opacity: 0;
+		visibility: hidden;
+		cursor: progress;
+	}
+
+	&:after {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 3px;
+		background: #000;
+		z-index: 9999998;
+		opacity: 1;
+	}
+
+	&.handling {
+		&:before {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		&:after {
+			animation: progress-loading 1s ease-in-out forwards
+		}
+	}
+
+	&.completed {
+		&:after {
+			animation: progress-completed .3s ease-in-out forwards;
+		}
+	}
+}
+
+.page-sidebar,
+.page-main-content {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+}
+
+.container-extended,
+.container-broad,
+.container-large,
+.container-wide,
+.container-wider {
+	@include make-container();
+}
+
+.container-gap-0 {
+	--bs-gutter-x: 0 !important;
+}
+
+@include media-breakpoint-up(xl) {
+	.container,
+	.container-extended,
+	.container-broad,
+	.container-large,
+	.container-wide,
+	.container-wider,
+	.container-fluid {
+		--bs-gutter-x: 50px;
+	}
+
+	.container {
+		max-width: 1270px;
+	}
+
+	.container-extended {
+		max-width: 1380px;
+
+		&.small-gutter {
+			max-width: 1310px;
+			--bs-gutter-x: 15px;
+		}
+	}
+
+	.container-broad {
+		max-width: 1440px;
+
+		&.small-gutter {
+			max-width: 1370px;
+			--bs-gutter-x: 15px;
+		}
+	}
+
+	.container-large {
+		max-width: 1510px;
+
+		&.small-gutter {
+			max-width: 1440px;
+			--bs-gutter-x: 15px;
+		}
+	}
+
+	.container-wide {
+		max-width: 1720px;
+
+		&.small-gutter {
+			max-width: 1650px;
+			--bs-gutter-x: 15px;
+		}
+	}
+
+	.container-wider {
+		max-width: 1820px;
+
+		&.small-gutter {
+			max-width: 1750px;
+			--bs-gutter-x: 15px;
+		}
+	}
+
+	.container-gap-100 {
+		--bs-gutter-x: 100px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.container-gap-80 {
+		--bs-gutter-x: 80px;
+	}
+}

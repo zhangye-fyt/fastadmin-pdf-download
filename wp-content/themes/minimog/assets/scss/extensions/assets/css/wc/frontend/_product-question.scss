@@ -1,0 +1,162 @@
+.question-form {
+	textarea {
+		height: 160px;
+	}
+
+	label {
+		display: none;
+	}
+
+	div[class*="question-form-"] {
+		margin-bottom: 20px;
+	}
+}
+
+.question-form-submit {
+	text-align: center;
+	margin: 30px 0 0 !important;
+}
+
+.single-product {
+	.minimog-wc-question {
+		.question-form-wrapper,
+		div[class*=question-form-wrapper-] {
+			padding-bottom: 60px;
+			margin-bottom: 60px;
+			border-bottom: 1px solid #eee;
+		}
+
+		.question-form-wrapper {
+			display: none;
+		}
+
+		.no-question {
+			.question-form-wrapper {
+				display: block;
+			}
+
+			.question-toolbar {
+				margin: 0;
+			}
+
+			.question-title {
+				display: none;
+			}
+		}
+
+		.woo-comment-author {
+			h6 {
+				padding-right: 10px;
+			}
+
+			.comment-datetime {
+				position: relative;
+				padding-left: 14px;
+				font-size: 14px;
+				color: $text-lighten2-color;
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: 7px;
+					left: 0;
+					font-size: 4px;
+					width: 1em;
+					height: 1em;
+					background: #c4c4c4;
+					border-radius: 50%;
+				}
+			}
+		}
+
+		.reply-action {
+			display: flex;
+
+			a + a {
+				padding-left: 10px;
+				margin-left: 10px;
+				border-left: 1px solid $text-lighten-color;
+			}
+			.cancel-reply {
+				pointer-events: none;
+				opacity: 0;
+
+				&.show {
+					opacity: 1;
+					pointer-events: auto;
+				}
+			}
+		}
+	}
+
+	.question-toolbar {
+		margin-bottom: 30px;
+
+		.question-title {
+			font-size: 20px;
+			line-height: 1.3;
+			margin-top: 0;
+			margin-bottom: 32px;
+		}
+	}
+
+	.question-list {
+		li {
+			padding-bottom: 0;
+			border-bottom: 0;
+			margin-bottom: 0;
+
+			+ li {
+				padding-top: 30px;
+				margin-top: 30px;
+				border-top: 1px solid #eee;
+			}
+		}
+
+		div[class*=question-form-wrapper-] {
+			margin-top: 30px;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+
+		.children {
+			list-style: none;
+
+			.woo-comment-author .avatar {
+				width: 48px;
+			}
+		}
+	}
+}
+
+.question-form-message-box {
+	display: none;
+	text-align: center;
+	margin: 20px 0 0 !important;
+
+	&.failed {
+		color: $error-color;
+	}
+
+	&.success {
+		color: $success-color;
+	}
+}
+
+.question-navigation {
+	margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+	.single-product .minimog-wc-question .question-form-wrapper,
+	.single-product .minimog-wc-question div[class*=question-form-wrapper-] {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+
+	.single-product .question-list div[class*=question-form-wrapper-] {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}

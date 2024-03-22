@@ -1,0 +1,24 @@
+.page-title-bar-standard-02 {
+	margin: 0 0 60px;
+
+	.page-title-bar-content {
+		justify-content: center;
+		text-align: center;
+		padding: 72px 0 77px;
+	}
+
+	.page-title-bar-bg {
+		background-color: #f7f7f7;
+	}
+
+	.heading {
+		max-width: 970px;
+		margin: 0 auto;
+	}
+
+	.page-breadcrumb {
+		display: flex;
+		align-items: center;
+		margin: 4px 0 0;
+	}
+}

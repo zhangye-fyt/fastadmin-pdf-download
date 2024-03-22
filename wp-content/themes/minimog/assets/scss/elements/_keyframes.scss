@@ -1,0 +1,80 @@
+// Rotating.
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+// Rotating at center.
+@keyframes rotating-center {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+.rotating {
+	animation: rotating 5s linear infinite;
+}
+
+@keyframes minimog-pulse {
+	50% {
+		opacity: .5;
+	}
+}
+
+@keyframes progress-loading {
+	0% {
+		width: 0
+	}
+
+	to {
+		width: 80%
+	}
+}
+
+@keyframes progress-completed {
+	0% {
+		width: 80%;
+	}
+	99% {
+		width: 100%
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes shakeY {
+	0%, to {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0)
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0)
+	}
+
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(0, 10px, 0);
+		transform: translate3d(0, 10px, 0)
+	}
+}
+
+.minimog-animate-pulse {
+	animation: minimog-pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+}
+
+.shakeY {
+	-webkit-animation-name: shakeY;
+	animation-name: shakeY;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-delay: .6s;
+}

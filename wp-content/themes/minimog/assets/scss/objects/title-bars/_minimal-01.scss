@@ -1,0 +1,17 @@
+.page-title-bar-minimal-01 {
+	.page-breadcrumb {
+		display: flex;
+		align-items: center;
+		padding: 3px 0;
+		min-height: var(--breadcrumb-height, 0);
+	}
+
+	.insight_core_breadcrumb {
+		> li {
+			a,
+			span {
+				padding: 0;
+			}
+		}
+	}
+}

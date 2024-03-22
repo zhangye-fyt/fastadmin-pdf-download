@@ -1,0 +1,34 @@
+.redux-container .redux-main .form-table {
+	tr.redux-row-field-parent {
+		border: 0;
+		border-top: 1px solid #e7e7e7 !important;
+
+		.redux_field_th,
+		.redux-field-container {
+			padding: 20px 0 !important;
+		}
+
+		&.redux-row-field-first-parent {
+			border: 0 !important;
+		}
+	}
+
+	tr.redux-row-field-child {
+		border: 0;
+
+		.redux_field_th,
+		.redux-field-container {
+			padding: 0 0 20px !important;
+		}
+	}
+
+	tr.redux-row-block {
+		display: block;
+
+		th,
+		td {
+			display: block;
+			width: 100%;
+		}
+	}
+}

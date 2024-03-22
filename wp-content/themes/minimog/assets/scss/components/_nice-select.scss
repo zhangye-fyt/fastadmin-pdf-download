@@ -1,0 +1,90 @@
+.minimog-widget-nice-select,
+.minimog-nice-select {
+	display: none;
+}
+
+.minimog-nice-select-wrap {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	width: 100%;
+
+	.minimog-nice-select-current {
+		@extend %NormalTransition;
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		background: $form-background url(./assets/svg/select-arrow.svg) no-repeat center right 15px;
+		background-size: 10px auto;
+		border: 1px solid $form-border;
+		color: $form-text;
+		padding: 3px 35px 3px 15px;
+		min-height: $form-input-height;
+		max-width: 100%;
+		border-radius: $form-input-rounded;
+		cursor: pointer;
+
+		.label {
+			margin-right: 4px;
+
+			&:before {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.minimog-nice-select {
+		@extend %NormalTransition;
+		//@include NormalRounded();
+		display: block;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		z-index: 9999;
+		list-style-type: none;
+		margin: 0;
+		padding: 15px 0;
+		background: $box-grey-background;
+		color: $heading-color;
+		border: 0;
+		visibility: hidden;
+		opacity: 0;
+		min-width: 100%;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+		font-size: $body-font-size;
+		line-height: $body-line-height;
+		font-weight: 500;
+		overflow-y: auto;
+
+		li {
+			position: relative;
+			cursor: pointer;
+			user-select: none;
+			padding: 5px 15px;
+			margin: 0;
+
+			&:hover {
+				color: #fff;
+				background: $heading-color;
+			}
+
+			&.selected {
+				color: #fff;
+				background: $heading-color;
+			}
+		}
+	}
+
+	&.focused {
+		.minimog-nice-select {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	&.focused .minimog-nice-select-current {
+		color: $form-focus-text;
+		border-color: $form-focus-border;
+		background-color: $form-focus-background;
+	}
+}

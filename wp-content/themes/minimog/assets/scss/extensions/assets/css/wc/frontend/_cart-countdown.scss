@@ -1,0 +1,23 @@
+.cart-countdown-message {
+	margin: 8px 0 0;
+	color: $heading-color;
+
+	.timer {
+		display: inline-block;
+		font-weight: $body-font-weight-medium;
+	}
+}
+
+.woocommerce-cart {
+	.page-content {
+		.cart-countdown-message {
+			text-align: center;
+			margin: 0 0 30px;
+			font-size: 22px;
+
+			.timer {
+				color: #cf1927;
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.minimog-blog-category {
+	.content-wrap {
+		text-align: center;
+	}
+
+	.image {
+		display: inline-block;
+		position: relative;
+		margin-bottom: 20px;
+
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	.cat-count {
+		display: inline-block;
+		position: absolute;
+		bottom: 20px;
+		right: 0;
+		font-size: 14px;
+		font-weight: 500;
+		color: #fff;
+		background-color: $heading-color;
+		width: 28px;
+		height: 28px;
+		line-height: 28px;
+		text-align: center;
+		border-radius: 50%;
+	}
+
+	.categories-name {
+		font-size: 18px;
+		font-weight: 500;
+		margin: 0;
+	}
+}

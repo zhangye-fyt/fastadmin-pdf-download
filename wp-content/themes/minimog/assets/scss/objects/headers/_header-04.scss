@@ -1,0 +1,64 @@
+.header-04 {
+	.header-above {
+		border-bottom: 1px solid #eee;
+	}
+
+	&.header-light {
+		.header-above {
+			border-bottom-color: rgba(255, 255, 255, .2);
+		}
+	}
+
+	.header-above-wrap {
+		min-height: 40px;
+		padding: 6px 0;
+	}
+
+	.header-above-left,
+	.header-above-right {
+		flex: 1 1 0px;
+	}
+
+	.header-above-center {
+		flex-shrink: 0;
+	}
+
+	.header-left,
+	.header-right {
+		flex-grow: 1;
+		width: 15%;
+	}
+
+	.header-center {
+		flex-shrink: 0;
+		width: 70%;
+	}
+
+	.branding {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+	}
+
+	.branding__logo {
+		pointer-events: auto;
+	}
+
+	.desktop-menu & {
+		.header-wrap {
+			min-height: var(--header-height, 70px);
+		}
+	}
+}
+
+.mobile-menu .header-04 {
+	.header-center {
+		width: calc(var(--minimog-tablet-branding-size) + 40px);
+	}
+}

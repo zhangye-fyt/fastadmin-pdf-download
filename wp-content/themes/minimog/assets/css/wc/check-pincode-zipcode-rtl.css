@@ -1,0 +1,437 @@
+
+
+
+
+.wpccc_maindiv {
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  background: #f7f7f7 !important;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.wpccc_maindiv > h3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-weight: var(--minimog-typography-headings-font-weight-secondary);
+  margin: 0 0 10px;
+}
+
+.wpccc_maindiv .wpccbtn {
+  padding: 0 18px;
+  background: var(--minimog-color-button-background) !important;
+  color: var(--minimog-color-button-text);
+  height: 40px;
+  line-height: calc(40px - 2px);
+}
+
+.wpccc_maindiv .wpcccheck {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  border: none;
+  min-height: 40px;
+  line-height: 1;
+}
+
+p.wpcc_err {
+  position: relative;
+  border: 1px solid #f00;
+  background: #f00;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+.wpcc-modal {
+  position: fixed;
+  z-index: 9999999;
+  padding-top: 100px;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  
+}
+
+.wpcc-modal .modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+          animation-name: animatetop;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  z-index: 999999;
+}
+
+.wpcc-modal .modalinner {
+  display: inline-block;
+  width: 100%;
+}
+
+.wpcc-modal .close {
+  float: left;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  position: relative;
+  top: 0;
+  left: 10px;
+}
+
+.wpcc-modal .close:hover, .wpcc-modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wpcc-modal .modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.wpcc-modal .modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.wpcc_popup_check_div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+input.wpccopuppinzip {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding: 10px !important;
+  height: auto;
+  outline: none;
+  border: 0 !important;
+  background: #fff !important;
+}
+
+input.wpccinzipsubmit {
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 10px 18px !important;
+  font-size: 16px;
+  display: block;
+  border-radius: 5px;
+  width: auto !important;
+  height: auto !important;
+  line-height: initial;
+}
+
+h4.wpcc_popup_header {
+  margin: 17px 0 25px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#wpcc_porepl {
+  background: #f00;
+  color: #fff;
+  cursor: not-allowed;
+  border: none;
+}
+
+.popup_oc_main {
+  width: 100%;
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup_oc_main svg {
+  width: 58px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.wpccc_spinner {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.wpccc_spinner img {
+  width: 30px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+
+.wpcc_avaddate {
+  display: inline-block;
+  float: right;
+}
+
+.wpcc_avacod {
+  display: inline-block;
+  float: right;
+}
+
+.wpcc_delicons {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  line-height: 1;
+  min-width: 20px;
+  margin: 0 0 0 10px !important;
+}
+
+.wpcc_delicons svg {
+  display: inline-block;
+  width: 20px;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.wpcc_tficon {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  line-height: 1;
+  margin: 0 0 0 10px;
+}
+
+.wpcc_tficon img {
+  width: 16px;
+}
+
+.wpcc_avaddate p,
+.wpcc_avacod p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.wpcc_avaddate span,
+.wpcc_avacod span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.wpcc-modal input.wpccinzipsubmit:hover {
+  text-decoration: none;
+}
+
+.wpcc_cookie_check_div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.wpcc_cookie_check_div svg {
+  width: 30px;
+  height: auto;
+}
+
+.wpcc_empty {
+  display: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.wpcc_avaitxt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wpcc_dlvrytxt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wpcc_pincode_popup_class {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+body.single-product .wpccc_maindiv.wpccc_loader {
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.wpccc_maindiv.wpccc_loader:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media only screen and (max-width: 768px) {
+  .popup_oc_main {
+    width: 100%;
+  }
+  input.wpccopuppinzip {
+    width: 66%;
+  }
+  .wpcc-modal .modal-content {
+    width: 85%;
+  }
+}
+
+.wpccc_maindiv_popup {
+  width: 93%;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.wpccc_maindiv_popup span.wpcc_empty {
+  color: #f00;
+  font-size: 20px;
+}
+
+input.wpccopuppinzip:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.serviceavailtxt {
+  color: #8bc34a;
+  font-weight: 500;
+}
+
+.wpcccheckbtn {
+  display: none;
+  line-height: 1;
+  margin: 0 10px 0 0;
+}
+
+.wpcccheckbtn img {
+  margin: 0 10px 0 0;
+  width: 18px;
+  cursor: pointer;
+}
+
+.deliverytime {
+  border-top: 1px solid #eee;
+  font-size: 15px;
+  margin: 15px 0 0;
+  padding: 4px 0 0;
+}
+
+.wpcc_avaicode {
+  margin: 0 10px 0 0;
+}
+
+.notavailable {
+  color: #f00;
+}

@@ -1,0 +1,15 @@
+/**
+ * Language switcher by Polylang
+ */
+.page-top-bar {
+  .switcher-language-wrapper {
+		.sub-menu {
+		  position: fixed;
+		  width: auto;
+		  top: 33px;
+		  left: 15px;
+		  right: auto;
+		  z-index: 99;
+		}
+  }
+}

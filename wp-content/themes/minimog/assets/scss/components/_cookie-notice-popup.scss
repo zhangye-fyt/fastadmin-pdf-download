@@ -1,0 +1,50 @@
+.cookie-notice-popup {
+	@extend %NormalTransition;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 30px;
+	background: #fff;
+	box-shadow: -2px 0 10px rgba(0, 0, 0, .1);
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+	z-index: $cookie-notice-index;
+
+	&.show {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	&.close {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+}
+
+.cookie-messages {
+	flex-grow: 1;
+}
+
+#btn-accept-cookie {
+	margin: 0 0 0 10px;
+}
+
+@include media-breakpoint-down(xs) {
+	.cookie-notice-popup {
+		display: block;
+		padding: 15px;
+	}
+
+	.cookie-messages {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	#btn-accept-cookie {
+		margin: 10px 0 0;
+		width: 100%;
+	}
+}

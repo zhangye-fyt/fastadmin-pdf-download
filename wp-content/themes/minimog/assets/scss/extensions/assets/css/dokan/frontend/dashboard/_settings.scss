@@ -1,0 +1,136 @@
+.dokan-settings-content {
+	.dokan-settings-area {
+		position: relative;
+
+		.dokan-store-settign-header-wrap {
+			width: 70%;
+			float: left;
+		}
+
+		.dokan-update-setting-top {
+			width: 30%;
+			float: right;
+		}
+
+		.dokan-dashboard-header {
+			margin: 0 0 10px;
+			border-bottom: 1px solid #ededed;
+			padding: 0 0 10px;
+		}
+
+		.dokan-dashboard-header h1 {
+			margin: 0;
+			border-bottom: none;
+		}
+
+		.dokan-dashboard-header:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 0;
+		}
+
+		.dokan-banner {
+			border: 3px dashed #ddd;
+			height: 300px;
+			margin: 0 0 30px 35px;
+			max-width: 850px;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.dokan-banner img {
+			max-width: 100%;
+		}
+
+		.dokan-banner .dokan-remove-banner-image {
+			position: absolute;
+			width: 100%;
+			height: 300px;
+			background: #000;
+			top: 0;
+			left: 0;
+			opacity: .7;
+			font-size: 100px;
+			color: #f00;
+			padding-top: 70px;
+			display: none;
+		}
+
+		.dokan-banner:hover {
+			cursor: pointer;
+		}
+
+		.dokan-banner:hover .dokan-remove-banner-image {
+			display: block;
+		}
+
+		.dokan-gravatar {
+			position: relative;
+		}
+
+		.dokan-gravatar .dokan-remove-gravatar-image {
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			background: #000;
+			top: 0;
+			left: 0;
+			opacity: .7;
+			font-size: 70px;
+			text-align: center;
+			color: #f00;
+			padding-top: 5px;
+			display: none;
+			border-radius: 50%;
+		}
+
+		.dokan-gravatar .gravatar-wrap .dokan-gravatar-img {
+			border-radius: 50%;
+			height: 80px !important;
+			width: 80px;
+		}
+
+		.dokan-gravatar:hover .dokan-remove-gravatar-image {
+			display: block;
+		}
+
+		.button-area i.fa-cloud-upload {
+			display: block;
+			font-size: 80px;
+			color: #dfdfdf;
+		}
+
+		.button-area .help-block {
+			font-size: 12px;
+			color: #b1b1b1;
+		}
+
+		ul.dokan-categories {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		ul.dokan-categories label {
+			font-weight: 400;
+		}
+
+		.dokan-address-fields label {
+			font-weight: 400;
+			font-size: 12px;
+		}
+
+		.dokan-form-group .checkbox {
+			margin-top: 0;
+		}
+	}
+}

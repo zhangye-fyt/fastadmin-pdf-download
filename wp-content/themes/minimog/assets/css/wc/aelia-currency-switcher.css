@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+
+
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .dropdown {
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .selected_currency:after {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector {
+  padding: 0 !important;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .selected_currency {
+  border: 0;
+  padding: 0 14px 0 0;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .selected_currency:before {
+  display: none;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .selected_currency:after {
+  content: "";
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .currency_name {
+  margin: 0 0 0 10px;
+  line-height: 26px;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .currency_flag {
+  min-width: 25px !important;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .currency_flag img {
+  max-width: 25px !important;
+  max-height: 26px !important;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .dropdown {
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+  padding: 18px 18px 22px;
+  top: 100%;
+  left: 0;
+  width: auto;
+  display: block !important;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .dropdown.hover-back {
+  left: auto;
+  right: 0;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .dropdown .currencies {
+  margin: 0;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .dropdown .currency {
+  padding: 4px 12px;
+  color: var(--minimog-color-text);
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .dropdown .currency.selected {
+  display: none;
+}
+
+.currency-switcher-menu-wrap .wc_aelia_cs_currency_selector .dropdown .currency:hover {
+  color: var(--minimog-color-heading) !important;
+  background: rgba(61, 61, 80, 0.09);
+}
+
+.page-top-bar .wc_aelia_cs_currency_selector .dropdown {
+  position: fixed;
+}

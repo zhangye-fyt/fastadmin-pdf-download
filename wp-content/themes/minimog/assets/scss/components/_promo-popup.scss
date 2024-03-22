@@ -1,0 +1,220 @@
+.modal-promo-popup {
+	.promo-popup-heading {
+		display: inline-block;
+		margin: 0;
+	}
+
+	.promo-popup-description {
+		display: inline-block;
+	}
+
+	.promo-popup-description-wrap {
+		margin: 7px 0 0;
+	}
+
+	.promo-popup-content-wrap {
+		margin: 10px 0 0;
+	}
+
+	.promo-popup-component-wrap {
+		margin: 28px 0 0;
+	}
+
+	.promo-popup-discount-code {
+		display: flex;
+	}
+
+	.discount-code {
+		flex-grow: 1;
+		border: 2px dashed #c5c5c5;
+		background: #f3f3f3;
+		border-radius: 5px;
+		font-size: 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		text-align: center;
+		margin: 0 17px 0 0;
+	}
+
+	.btn-copy {
+		flex-shrink: 0;
+		padding: 0 10px;
+		min-width: 130px;
+	}
+
+	.form-item {
+		+ .form-item {
+			margin-top: 12px;
+		}
+	}
+
+	.wpforms-container {
+		form {
+			.wpforms-field {
+				margin-bottom: 20px;
+			}
+
+			.wpforms-submit-container {
+				input,
+				button {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.form-submit {
+		margin-top: 11px;
+		width: 100%;
+
+		input,
+		button {
+			width: 100%;
+		}
+
+		.button-icon {
+			display: none;
+		}
+	}
+
+	&.style-01 {
+		--modal-spacing: 0;
+
+		.promo-popup-image {
+			height: 230px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.promo-popup-content {
+			padding: 30px 42px 35px;
+			text-align: center;
+		}
+
+		.promo-popup-heading {
+			font-size: 26px;
+			font-weight: $heading-font-weight-secondary;
+			line-height: 1.462;
+			max-width: 440px;
+		}
+
+		.promo-popup-description {
+			font-size: 17px;
+			max-width: 310px;
+		}
+	}
+
+	&.style-02 {
+		--modal-width: 700px;
+		--modal-spacing: 0;
+
+		.modal-content-body {
+			display: flex;
+		}
+
+		.promo-popup-image {
+			flex-shrink: 0;
+			width: 49%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.promo-popup-content {
+			padding: 42px 30px 49px;
+		}
+
+		.promo-popup-heading {
+			font-size: 34px;
+			line-height: 1.353;
+		}
+
+		.promo-popup-discount-code {
+			flex-wrap: wrap;
+		}
+
+		.discount-code {
+			width: 100%;
+			margin: 0 0 17px;
+		}
+
+		.btn-copy {
+			width: 100%;
+		}
+	}
+
+	&.style-03 {
+		--modal-width: 770px;
+		--modal-spacing: 20px;
+
+		.modal-content-body {
+			display: flex;
+		}
+
+		.promo-popup-image {
+			flex-shrink: 0;
+			width: 44%;
+			overflow: hidden;
+			border-radius: var(--modal-rounded);
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.promo-popup-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			min-height: 340px;
+			padding: 0 12px 0 32px;
+		}
+
+		.promo-popup-heading {
+			font-size: 34px;
+			line-height: 1.353;
+		}
+
+		.promo-popup-discount-code {
+			flex-wrap: wrap;
+		}
+
+		.discount-code {
+			width: 100%;
+			margin: 0 0 17px;
+		}
+
+		.btn-copy {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.modal-promo-popup {
+		&.style-01 {
+			.promo-popup-image {
+				height: 190px;
+			}
+
+			.promo-popup-heading {
+				font-size: 20px;
+			}
+
+			.promo-popup-content {
+				padding: 25px 20px 30px;
+				text-align: center;
+			}
+		}
+	}
+}

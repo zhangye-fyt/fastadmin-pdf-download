@@ -1,0 +1,39 @@
+#dokan-product-enquiry {
+	.dokan-btn {
+		margin: 25px 0 0;
+	}
+}
+
+.woocommerce-tabs {
+	.geolocation_tab {
+		address {
+			&:empty {
+				display: none;
+			}
+		}
+	}
+
+	.seller_tab {
+		.list-unstyled {
+			margin: 0;
+		}
+	}
+}
+
+.single-product {
+	#dokan-geolocation-locations-map {
+		margin: 0 !important;
+	}
+}
+
+.dokan-store-support-btn-product {
+	margin: 0 0 20px !important;
+	width: 100%;
+}
+
+#dokan-report-abuse-form-popup-form {
+	> div {
+		font-weight: $body-font-weight-medium;
+		color: $heading-color;
+	}
+}

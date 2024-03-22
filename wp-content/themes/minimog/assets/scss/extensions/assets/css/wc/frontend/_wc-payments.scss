@@ -1,0 +1,29 @@
+/**
+ * WC Payments plugin + WC Stripe Payment plugin
+ */
+
+#wcpay-payment-request-button-separator,
+#wc-stripe-payment-request-button-separator {
+	font-size: 15px;
+	width: 100%;
+	margin: 10px 0 !important;
+}
+
+#wcpay-payment-request-wrapper,
+#wc-stripe-payment-request-wrapper {
+	flex-grow: 1;
+	width: 100%;
+	padding: 0 !important;
+	margin: 0;
+}
+
+// WC Payments + WC Stripe Payment.
+.first-payment-date {
+	margin: 0;
+
+	small:not(:empty) {
+		display: block;
+		font-size: .9em;
+		margin: 0 0 15px;
+	}
+}

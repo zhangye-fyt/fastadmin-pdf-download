@@ -1,0 +1,16 @@
+#dokan-geolocation-locations-map {
+	margin: 0 0 40px;
+}
+
+.dokan-geolocation-location-filters {
+	.range-slider-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.range-slider-container {
+		input[type='range'].dokan-range-slider {
+			margin: 0 !important;
+		}
+	}
+}

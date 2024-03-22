@@ -1,0 +1,251 @@
+/* Loop Animations */
+@keyframes tm-loop-move-vertical {
+	0% {
+		transform: translate3d(0, -5px, 0);
+	}
+	100% {
+		transform: translate3d(0, 5px, 0);
+	}
+}
+
+.loop-move-vertical {
+	animation: 3s tm-loop-move-vertical linear infinite alternate;
+}
+
+@keyframes tm-loop-move-horizontal {
+	0% {
+		transform: translate3d(-5px, 0, 0);
+	}
+	100% {
+		transform: translate3d(5px, 0, 0);
+	}
+}
+
+.loop-move-horizontal {
+	animation: 3s tm-loop-move-horizontal linear infinite alternate;
+}
+
+@keyframes tm-loop-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+.loop-rotate {
+	animation: 3s tm-loop-rotate linear infinite;
+}
+
+/* Hover Animations */
+.minimog-image {
+	@extend %NormalTransition;
+}
+
+.minimog-animation-zoom-in {
+	.minimog-image {
+		overflow: hidden;
+		-webkit-mask-image: -webkit-radial-gradient(white, black);
+
+		.image,
+		img {
+			// !important to prevent swiper override.
+			width: 100% !important;
+			transition: all .75s cubic-bezier(0, 0, .2, 1);
+		}
+
+		.minimog-lazy-image {
+			min-width: 100%;
+		}
+	}
+
+	.minimog-box {
+		&:hover {
+			.minimog-image {
+				.image,
+				img {
+					transform: scale3d(1.1, 1.1, 1.1);
+				}
+			}
+		}
+	}
+}
+
+.minimog-animation-zoom-out {
+	.minimog-image {
+		overflow: hidden;
+		-webkit-mask-image: -webkit-radial-gradient(white, black);
+
+		.image,
+		img {
+			width: 100% !important;
+			transition: all .75s cubic-bezier(0, 0, .2, 1);
+			transform: scale3d(1.1, 1.1, 1.1);
+		}
+
+		.minimog-lazy-image {
+			min-width: 100%;
+		}
+	}
+
+	.minimog-box {
+		&:hover {
+			.minimog-image {
+				.image,
+				img {
+					transform: scale3d(1, 1, 1);
+				}
+			}
+		}
+	}
+}
+
+.minimog-animation-move-up {
+	.minimog-box {
+		.minimog-image {
+			transition: all .3s cubic-bezier(0, 0, .2, 1);
+		}
+
+		&:hover {
+			.minimog-image {
+				transform: translateY(-10px);
+			}
+		}
+	}
+}
+
+.minimog-animation-move-up-drop-shadow {
+	.minimog-box {
+		.minimog-image {
+			position: relative;
+			transition: all .3s cubic-bezier(0, 0, .2, 1);
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				top: 50%;
+				left: 10%;
+				right: 10%;
+				box-shadow: 0 10px 50px rgba(51, 51, 51, .22);
+				z-index: -1;
+				opacity: 0;
+				transition: opacity .3s linear;
+			}
+		}
+
+		&:hover {
+			.minimog-image {
+				transform: translateY(-10px);
+
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.minimog-box-animation-move-up {
+	.minimog-box {
+		transition: all .3s cubic-bezier(0, 0, .2, 1);
+
+		&:hover {
+			transform: translateY(-10px);
+		}
+	}
+}
+
+/* Entrance Grid Animation */
+.minimog-grid.has-animation {
+	.grid-item {
+		opacity: 0;
+	}
+
+	&.fade-in {
+		.grid-item {
+			&.animate {
+				opacity: 1;
+				transition: opacity 0.25s linear;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes moveHorizontal {
+	0% {
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes moveHorizontal {
+	0% {
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@include elementor-breakpoint-up(laptop) {
+	.minimog-animation-scaling-up,
+	.minimog-animation-scaling-up-style-02 {
+		.minimog-image {
+			transition: transform .64s cubic-bezier(.15, .75, .5, 1) 0s;
+			overflow: hidden;
+
+			.image,
+			img {
+				backface-visibility: hidden;
+				transform: scale(1.13) translateZ(0);
+				transition: transform .64s cubic-bezier(.15, .75, .5, 1) 0s;
+			}
+		}
+
+		// Avoid image slide is cut
+		.tm-swiper {
+			.swiper-inner {
+				margin: 0 -20px;
+			}
+
+			.swiper-container {
+				padding: 20px;
+			}
+		}
+	}
+
+	.minimog-animation-scaling-up {
+		.minimog-box {
+			&:hover {
+				.minimog-image {
+					transform: scale(1.08) translateZ(0);
+
+					.image,
+					img {
+						transform: scale(1) translateZ(0);
+					}
+				}
+			}
+		}
+	}
+
+	.minimog-animation-scaling-up-style-02 {
+		.minimog-box {
+			&:hover {
+				.minimog-image {
+					transform: scale(1.2) translateZ(0);
+
+					.image,
+					img {
+						transform: scale(1) translateZ(0);
+					}
+				}
+			}
+		}
+	}
+}

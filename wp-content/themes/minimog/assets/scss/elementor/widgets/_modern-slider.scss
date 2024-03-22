@@ -1,0 +1,300 @@
+.tm-modern-slider {
+	.tm-swiper {
+		--ken-burn-speed: 5000ms;
+
+		.swiper-slide {
+			overflow: hidden;
+		}
+	}
+
+	.swiper-button-prev {
+		left: 0 !important;
+		margin: 10px 0 10px 30px;
+	}
+
+	.swiper-button-next {
+		right: 0 !important;
+		margin: 10px 30px 10px 0;
+	}
+
+	.minimog-box {
+		height: 820px;
+		overflow: hidden;
+		display: block;
+		position: relative;
+	}
+
+	.slide-bg-wrap {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.slide-bg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #111;
+	}
+
+	.container,
+	.row {
+		height: 100%;
+	}
+
+	.slide-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		height: 100%;
+		// max-width: 100%;
+		margin: 0 auto;
+
+		&.slide-content-outside {
+			display: none;
+		}
+	}
+
+	.sub-title,
+	.title,
+	.description {
+		color: #fff;
+	}
+
+	.slide-layers {
+		max-width: 100%;
+		width: 750px;
+		// padding: 30px;
+		position: relative;
+	}
+
+	.sub-title-wrap {
+		margin: 0 0 21px;
+	}
+
+	.sub-title {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1.54;
+		margin: 0;
+	}
+
+	.title {
+		font-size: 56px;
+		line-height: 1.3;
+		margin: 0;
+	}
+
+	.description-wrap {
+		margin-top: 13px;
+	}
+
+	.description {
+		font-size: 18px;
+		line-height: 1.55;
+	}
+
+	.button-wrap {
+		margin-top: 51px;
+	}
+
+	.tm-button {
+		display: inline-flex;
+
+		&.style-flat,
+		&.style-border {
+			min-width: 160px;
+			max-width: 100%;
+			padding: 0 45px;
+		}
+	}
+
+	// Footer
+	.slide-footer {
+		color: #000;
+		position: absolute;
+		bottom: 47px;
+		width: 100%;
+		z-index: 8;
+
+		&__container {
+			max-width: 100%;
+			margin: 0 auto;
+			height: auto;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+		&__text {
+			margin-right: 10px;
+		}
+
+		&__link {
+			margin-left: 15px;
+		}
+	}
+}
+
+.minimog-slide-bg-animation-ken-burns {
+	.slide-bg-wrap {
+		-webkit-transform: scale(1.3);
+		transform: scale(1.3);
+		backface-visibility: hidden;
+	}
+
+	&.swiper-ken-burn-active {
+		.slide-bg-wrap {
+			transform: scale(1) !important;
+		}
+	}
+
+	&.minimog-slide-active {
+		.slide-bg-wrap {
+			transform: scale(1);
+			transition: transform var(--ken-burn-speed) cubic-bezier(0.1, 0.2, .7, 1);
+		}
+	}
+}
+
+.tm-modern-slider {
+	.slide-layer-transition {
+		.animated {
+			.slide-layers {
+				transform: translateY(0);
+				transition: all .6s cubic-bezier(0.1, 0.2, .7, 1);
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.slide-layer {
+				transform: translateY(0);
+				opacity: 1;
+				visibility: visible;
+				transition: all .6s cubic-bezier(0.1, 0.2, .7, 1);
+			}
+
+			.slide-layer-wrap {
+				+ .slide-layer-wrap {
+					.slide-layer {
+						transition-delay: .2s;
+					}
+
+					+ .slide-layer-wrap {
+						.slide-layer {
+							transition-delay: .4s;
+						}
+					}
+				}
+			}
+
+			.slide-footer {
+				transform: translateX(0);
+				opacity: 1;
+				visibility: visible;
+				transition: all .6s cubic-bezier(0.1, 0.2, .7, 1);
+			}
+		}
+
+		.slide-layers {
+			transform: translateY(30px);
+			transition: all .1s;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.slide-layer {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(30px);
+			transition: all .1s;
+		}
+
+		.slide-footer {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateX(-30px);
+			transition: all .1s;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(tablet-extra) {
+	.tm-modern-slider {
+		.minimog-box {
+			height: 600px;
+		}
+
+		.title {
+			font-size: 40px;
+		}
+
+		.sub-title {
+			font-size: 22px;
+		}
+
+		.description {
+			font-size: 16px;
+		}
+
+		.button-wrap {
+			margin-top: 40px;
+
+			.tm-button.style-flat,
+			.tm-button.style-border {
+				padding: 0 30px;
+				min-width: 140px;
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(tablet) {
+	.tm-modern-slider {
+		.minimog-box {
+			height: 400px;
+		}
+
+		.title {
+			font-size: 36px;
+		}
+
+		.sub-title {
+			font-size: 15px;
+		}
+
+		.button-wrap {
+			.tm-button.style-flat,
+			.tm-button.style-border {
+				padding: 0 20px;
+				min-width: 120px;
+			}
+		}
+	}
+
+	.tm-modern-slider--layout-split {
+		.slide-content {
+			display: none;
+
+			&.slide-content-outside {
+				display: flex;
+			}
+		}
+
+		.slide-content-outside {
+			.slide-layers {
+				padding: 25px 15px 10px 15px;
+			}
+		}
+
+		.slide-footer {
+			display: none;
+		}
+	}
+}

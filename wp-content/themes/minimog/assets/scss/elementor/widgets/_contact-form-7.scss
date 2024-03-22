@@ -1,0 +1,93 @@
+.wpcf7 {
+	.wpcf7-response-output {
+		margin: 30px 0 0;
+		padding: 15px 20px;
+		border: 0;
+		color: #fff;
+	}
+
+	.wpcf7-validation-errors {
+		background: #f0ad4e;
+	}
+
+	.wpcf7-mail-sent-ok {
+		background: #5cb85c;
+	}
+
+	.wpcf7-not-valid-tip {
+		margin-top: 5px;
+		color: #d9534f;
+		font-size: 12px;
+	}
+}
+
+.minimog-contact-form-7 {
+	.wpcf7-form {
+		br {
+			display: none;
+		}
+	}
+
+	.form-item {
+		position: relative;
+
+		&.has-icon {
+			.wpcf7-text,
+			.wpcf7-date {
+				padding-right: 40px;
+			}
+		}
+	}
+
+	.form-icon {
+		font-size: 18px;
+		color: #ccc;
+		position: absolute;
+		top: 14px;
+		right: 17px;
+		line-height: 0;
+	}
+
+	.wpcf7-textarea {
+		height: 150px;
+	}
+
+	.ajax-loader {
+		display: none !important;
+	}
+
+	.form-submit {
+		text-align: center;
+		display: flex;
+	}
+}
+
+.minimog-button-align-start {
+	.form-submit {
+		justify-content: flex-start;
+	}
+}
+
+.minimog-button-align-center {
+	.form-submit {
+		justify-content: center;
+	}
+}
+
+.minimog-button-align-end {
+	.form-submit {
+		justify-content: flex-end;
+	}
+}
+
+.minimog-button-align-stretch {
+	.form-submit {
+		input[type='submit'],
+		button {
+			text-align: center;
+			-webkit-flex-basis: 100%;
+			-ms-flex-preferred-size: 100%;
+			flex-basis: 100%;
+		}
+	}
+}

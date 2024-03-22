@@ -1,0 +1,53 @@
+.header-02 {
+	--header-nav-item-hoz-padding: 18px !important;
+	--header-nav-item-ver-padding: 20px;
+
+	.header-below-left,
+	.header-below-right {
+		flex: 1 1 0px;
+	}
+
+	.header-below-center {
+		flex-shrink: 0;
+	}
+
+	.header-left,
+	.header-right {
+		flex: 1 1 0px;
+	}
+
+	.header-center {
+		flex-shrink: 0;
+		width: calc(var(--minimog-branding-size) + 40px);
+	}
+
+	.header-search-form {
+		.search-form {
+			width: 270px;
+		}
+	}
+
+	.desktop-menu & {
+		.header-wrap {
+			padding: 18px 0 4px;
+		}
+
+		.header-right {
+			.header-login-link,
+			.header-wishlist-link,
+			.mini-cart__button {
+				display: none;
+			}
+		}
+	}
+}
+
+.mobile-menu .header-02 {
+	.header-center {
+		width: calc(var(--minimog-tablet-branding-size) + 40px);
+	}
+
+	.header-below {
+		display: none;
+	}
+}

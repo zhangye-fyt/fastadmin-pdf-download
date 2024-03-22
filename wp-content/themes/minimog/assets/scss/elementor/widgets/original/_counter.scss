@@ -1,0 +1,20 @@
+// Override default style from Elementor.
+.elementor-widget-counter {
+	.elementor-counter {
+		.elementor-counter-number-wrapper {
+			font-size: 64px;
+			font-weight: 400;
+			color: #333;
+		}
+
+		.elementor-counter-title {
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 2;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-top: 17px;
+			color: #ababab;
+		}
+	}
+}

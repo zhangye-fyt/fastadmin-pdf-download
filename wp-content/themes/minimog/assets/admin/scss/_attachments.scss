@@ -1,0 +1,54 @@
+.compat-item {
+	tr {
+		padding: 5px 0;
+	}
+
+	.label {
+		min-width: 0;
+		width: 100%;
+		float: none;
+		text-align: start;
+		margin: 0 0 5px;
+		padding: 0;
+
+		span {
+			text-align: start;
+			padding: 0;
+		}
+	}
+
+	.field {
+		float: none;
+		margin: 0;
+		width: 100%;
+		text-align: start;
+	}
+}
+
+.media-sidebar {
+	.minimog-video-upload {
+		margin: 10px 0 0 !important;
+	}
+}
+
+.minimog-360-sprite-image {
+	display: none;
+	width: 150px;
+	height: 150px;
+	max-width: 100%;
+	background-color: #c8c8c8;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 0 10px;
+}
+
+.minimog-360-sprite-has-image {
+	display: block !important;
+}
+
+.compat-field-minimog_360_source_sprite {
+	.button-secondary {
+		margin: 0 10px 10px 0;
+	}
+}

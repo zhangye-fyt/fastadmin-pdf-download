@@ -1,0 +1,14 @@
+.elementor-widget-tm-site-logo {
+	.elementor-widget-container {
+		display: flex;
+	}
+
+	.site-logo {
+		width: var(--minimog-branding-size);
+		max-width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+}

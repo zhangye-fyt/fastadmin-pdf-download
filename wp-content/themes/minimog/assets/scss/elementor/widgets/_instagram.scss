@@ -1,0 +1,78 @@
+.minimog-instagram {
+	.minimog-instagram-image {
+		img,
+		.instagram-item-link {
+			border-radius: inherit;
+		}
+
+		.instagram-item-link {
+			position: relative;
+			display: block;
+		}
+
+		.icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 99;
+			font-size: 24px;
+			line-height: 1;
+			color: $link-color;
+
+			i {
+				width: 55px;
+				height: 55px;
+				background-color: #fff;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transform: translateY(20%);
+				opacity: 0;
+				transition: all 0.3s;
+			}
+		}
+	}
+
+	.minimog-box:hover {
+		.icon {
+			i {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+}
+
+.minimog-instagram--cropped {
+
+	.minimog-lazy-image {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+
+	.minimog-instagram-image {
+		img {
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+
+		.instagram-item-link {
+			&:before {
+				content: "";
+				display: block;
+				padding-top: 100%;
+			}
+		}
+	}
+}

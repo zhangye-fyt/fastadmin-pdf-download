@@ -1,0 +1,36 @@
+.lg-backdrop {
+	z-index: 999998 !important;
+}
+
+.lg-outer {
+	z-index: 999999 !important;
+
+	.lg-thumb-item {
+		&.active,
+		&:hover {
+			border-color: $primary-color !important;
+		}
+	}
+}
+
+.lg-sub-html {
+	* {
+		color: inherit;
+	}
+}
+
+.lg-actions {
+	.lg-prev,
+	.lg-next {
+		border: 0;
+
+		&:before,
+		&:after {
+			color: #fff;
+		}
+	}
+}
+
+.lg-progress-bar .lg-progress {
+	background: $primary-color !important;
+}

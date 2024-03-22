@@ -1,0 +1,149 @@
+// Blog archive quote
+.tm-blog-archive-quote {
+	.tm-blockquote blockquote {
+		max-width: 800px;
+	}
+
+	.tm-blockquote__icon {
+		font-size: 55px;
+		margin-bottom: 34px;
+	}
+
+	.tm-blockquote__content {
+		font-size: 30px;
+		line-height: 1.6;
+	}
+}
+
+// Post Format
+.entry-post-feature {
+	&.tm-popup-video {
+		.video-overlay {
+			background-color: rgba(0, 0, 0, .1);
+		}
+
+		div .icon:before {
+			border-left-color: #fff;
+		}
+	}
+
+	&.post-gallery {
+		.swiper-slide {
+			overflow: hidden;
+		}
+	}
+
+	&.post-link {
+		font-size: 28px;
+		line-height: 1.43;
+		font-weight: $body-font-weight-medium;
+		padding: 45px 60px;
+		background-color: #5c4f44;
+
+		a {
+			word-wrap: break-word;
+			color: #fff;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&.post-quote {
+		position: relative;
+		text-align: center;
+		background-color: #e8e2da;
+
+		blockquote {
+			color: #000;
+		}
+
+		.tm-blockquote__content {
+			margin-bottom: 24px;
+		}
+	}
+
+	.post-quote-content {
+		position: relative;
+		padding: 67px 77px 80px;
+	}
+}
+
+// Post Meta
+.entry-post-meta {
+	font-size: 15px;
+	color: $text-color;
+
+	.post-author {
+		a {
+			display: block;
+		}
+
+		span {
+			color: $text-color;
+		}
+
+		img {
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			vertical-align: middle;
+			margin-right: 6px;
+		}
+	}
+
+	.post-date {
+		color: #000;
+
+		span {
+			color: $text-color;
+		}
+	}
+}
+
+.entry-post-meta__inner {
+	> div {
+		position: relative;
+		display: inline-block;
+		margin: 0 0 5px;
+	}
+}
+
+.blog-archive.page-blocks-style-border-block {
+	.minimog-main-post {
+		padding: 30px;
+		border: 1px solid $box-white-border;
+		background: $box-white-background;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.entry-post-feature .post-quote-content {
+		padding: 40px 30px;
+	}
+
+	.tm-blog-archive-quote {
+		.tm-blockquote__icon {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		.tm-blockquote__content {
+			font-size: 22px;
+		}
+	}
+
+	.entry-post-feature {
+		&.post-link {
+			font-size: 22px;
+			padding: 25px 35px;
+		}
+
+		&.post-gallery {
+			.swiper-pagination-inner {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

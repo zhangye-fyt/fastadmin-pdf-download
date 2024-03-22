@@ -1,0 +1,48 @@
+.header-03 {
+	--header-nav-item-hoz-padding: 15px;
+
+	.header-above {
+		border-bottom: 1px solid #eee;
+	}
+
+	&.header-light {
+		.header-above {
+			border-bottom-color: rgba(255, 255, 255, .2);
+		}
+	}
+
+	.header-above-wrap {
+		min-height: 40px;
+		padding: 6px 0;
+	}
+
+	.header-above-left,
+	.header-above-right {
+		flex: 1 1 0px;
+	}
+
+	.header-above-center {
+		flex-shrink: 0;
+	}
+
+	.header-left,
+	.header-right {
+		flex: 1 1 0px;
+	}
+
+	.header-center {
+		flex-shrink: 0;
+	}
+
+	.desktop-menu & {
+		.header-wrap {
+			min-height: var(--header-height, 70px);
+		}
+	}
+}
+
+.mobile-menu .header-03 {
+	.header-center {
+		width: calc(var(--minimog-tablet-branding-size) + 40px);
+	}
+}

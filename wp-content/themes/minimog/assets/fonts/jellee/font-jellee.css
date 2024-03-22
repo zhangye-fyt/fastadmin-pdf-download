@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Jellee';
+	src: url('Jellee-Roman.otf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}

@@ -1,0 +1,35 @@
+.minimog-menu-icon-view {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	font-size: 0;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.menu-item {
+	.field-item-icon {
+		.button-link {
+			display: inline-block;
+			padding: 3px;
+		}
+	}
+}
+
+.menu-settings-group.menu-theme-locations {
+	overflow: visible;
+
+	[class*='hint'] {
+		margin: 0 0 0 5px;
+		color: #2271b1;
+
+		&:after {
+			line-height: 20px;
+			white-space: pre-wrap;
+			width: 570px;
+			max-width: 80vw;
+		}
+	}
+}

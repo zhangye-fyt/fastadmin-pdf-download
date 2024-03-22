@@ -1,0 +1,149 @@
+.archive-row-actions {
+	margin-bottom: 10px;
+}
+
+.archive-result-count {
+	line-height: 20px;
+	min-height: 34px;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+
+	.count {
+		font-weight: $body-font-weight-medium;
+		color: $heading-color;
+	}
+}
+
+.archive-layout-switcher {
+	> .inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 0 -5px;
+	}
+
+	.switcher-item {
+		position: relative;
+		width: 34px;
+		height: 34px;
+		margin: 0 5px;
+		cursor: pointer;
+		color: $heading-color;
+		background: #f2f2f2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 3px;
+		font-size: 18px;
+
+		svg {
+			width: 1em;
+			height: 1em;
+
+			*[fill^='#'] {
+				fill: currentColor;
+			}
+		}
+
+		&.selected {
+			cursor: auto;
+			color: $heading-color;
+		}
+
+		&.selected,
+		&:hover {
+			color: #fff;
+			background: $heading-color;
+		}
+	}
+}
+
+.active-filters-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 0 12px;
+
+	.remove-filter-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		line-height: 24px;
+		padding: 2px 10px 2px 30px;
+		background: #e8e8e8;
+		color: $heading-color;
+		border-radius: 5px;
+		font-size: 15px;
+		font-weight: 500;
+		margin: 0 15px 15px 0;
+
+		&:hover {
+			color: #fff;
+			background: $heading-color;
+		}
+
+		.filter-link-text {
+			&:before {
+				@extend %FontAwesomeRegular;
+				content: $fa-times;
+				font-size: 16px;
+				position: absolute;
+				left: 10px;
+				top: 50%;
+				transform: translate(0, -50%);
+			}
+
+			.amount {
+				font-size: inherit !important;
+				font-weight: inherit !important;
+				color: inherit !important;
+			}
+		}
+	}
+
+	.remove-all-filters-link {
+		margin: 0 15px 15px 0;
+		color: $text-color;
+		font-weight: 400;
+		white-space: nowrap;
+		display: block;
+		text-transform: capitalize;
+		text-decoration: underline;
+
+		&:hover {
+			color: $heading-color;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.archive-layout-switcher {
+		.grid-five {
+			display: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.archive-layout-switcher {
+		.grid-four {
+			display: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.archive-layout-switcher {
+		.grid-three {
+			display: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.archive-result-count {
+		font-size: 14px;
+	}
+}

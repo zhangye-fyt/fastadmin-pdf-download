@@ -1,0 +1,353 @@
+@import '../base';
+
+.woo-sctr-single-product-container.woo-sctr-countdown-hidden {
+	display: block !important;
+	visibility: visible !important;
+}
+
+.woo-sctr-single-product-container {
+	margin: 17px 0 25px !important;
+
+	.woo-sctr-shortcode-countdown-timer-wrap {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		padding: 0;
+	}
+
+	.woo-sctr-countdown-timer-layout {
+		background: transparent;
+		min-width: 0;
+		max-width: 100%;
+		margin: 0;
+		text-align: start;
+		display: block;
+	}
+}
+
+.single_variation_wrap {
+	.woo-sctr-single-product-container {
+		margin: 10px 0 0 !important;
+	}
+}
+
+.woo-sctr-shortcode-wrap {
+	padding: 0 !important;
+}
+
+.woo-sctr-progress-bar-wrap-container {
+	margin: 20px 0 0 !important;
+}
+
+.woo-sctr-progress-bar-message {
+	display: flex !important;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	font-size: $body-font-size !important;
+	line-height: 24px;
+	margin: 12px 0 0;
+
+	.woo-sctr-progress-bar-position-above_progressbar & {
+		margin: 0 0 12px;
+	}
+}
+
+.woo-sctr-countdown-time-separator,
+.woo-sctr-countdown-value {
+	color: $primary-color !important;
+}
+
+.progress-bar-message-item {
+	.value {
+		color: $heading-color;
+		font-weight: $body-font-weight-medium;
+	}
+}
+
+.woo-sctr-sticky-top {
+	position: static;
+	top: auto;
+	left: auto;
+}
+
+.woo-sctr-countdown-timer {
+	grid-template-columns: repeat(4, auto);
+}
+
+.minimog-sales-countdown-layout-box {
+	--number-size: 34px;
+	--separator-size: 10px;
+
+	.woo-sctr-countdown-value {
+		font-size: var(--number-size) !important;
+		font-weight: 400;
+		line-height: 1 !important;
+	}
+
+	.woo-sctr-countdown-text {
+		font-size: 12px !important;
+		font-weight: $body-font-weight-medium;
+		text-transform: uppercase;
+		letter-spacing: 0.55px;
+		line-height: 24px;
+		color: $primary-color !important;
+		text-align: center;
+		margin: 5px 0 0;
+
+		&.woo-sctr-datetime-format-position-top {
+			margin: 0 0 5px;
+		}
+	}
+
+	.woo-sctr-countdown-time-separator {
+		margin: 0 10px 0 0;
+	}
+
+	.woo-sctr-countdown-timer-text-wrap {
+		position: relative;
+		margin: 0 0 18px;
+		padding: 0 0 0 24px;
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: $body-font-weight-medium;
+
+		&:before {
+			@extend %FontAwesomeSolid;
+			content: $fa-fire;
+			position: absolute;
+			font-size: 18px;
+			top: 4px;
+			left: 0;
+			color: $primary-color;
+		}
+	}
+
+	.woo-sctr-countdown-timer-text-before {
+		color: $primary-color;
+	}
+
+	.woo-sctr-layout-1 {
+		padding: 0 !important;
+	}
+
+	.woo-sctr-countdown-time-separator {
+		font-size: var(--separator-size) !important;
+		font-weight: $body-font-weight-medium;
+	}
+}
+
+.minimog-sales-countdown-layout-box-1 {
+	.woo-sctr-countdown-value {
+		border: 1px solid #ffc8c8 !important;
+		background: #fee !important;
+		width: 80px !important;
+		height: 80px !important;
+		border-radius: 5px !important;
+	}
+}
+
+.minimog-sales-countdown-layout-box-2 {
+	.woo-sctr-countdown-value {
+		border: 0 !important;
+		width: auto !important;
+		height: auto !important;
+	}
+
+	.woo-sctr-countdown-unit {
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		border: 1px solid #ffc8c8;
+		background: #fee;
+		width: 80px !important;
+		height: 80px !important;
+		border-radius: 5px !important;
+	}
+
+	.woo-sctr-countdown-value,
+	.woo-sctr-countdown-text {
+		background: transparent !important;
+	}
+}
+
+.minimog-sales-countdown-layout-inline {
+	--number-size: 20px;
+	--separator-size: 20px;
+
+	.woo-sctr-countdown-timer-layout {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 10px 11px !important;
+		background: #fee !important;
+		border: 1px solid #ffc8c8;
+		border-radius: 5px;
+		gap: 0;
+	}
+
+	.woo-sctr-shortcode-countdown-unit {
+		display: flex;
+		align-items: center;
+	}
+
+	.woo-sctr-countdown-value {
+		font-size: var(--number-size) !important;
+		font-weight: $body-font-weight-medium;
+		line-height: 26px;
+		min-width: 25px;
+		text-align: end;
+	}
+
+	.woo-sctr-countdown-text {
+		font-size: var(--number-size) !important;
+		font-weight: $body-font-weight-medium;
+		line-height: 26px;
+		text-transform: uppercase;
+		color: $primary-color !important;
+	}
+
+	.woo-sctr-countdown-time-separator {
+		font-size: var(--separator-size) !important;
+		font-weight: $body-font-weight-medium;
+	}
+
+	.woo-sctr-countdown-unit-wrap {
+		line-height: 26px;
+	}
+
+	.woo-sctr-countdown-timer-text-wrap {
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: $body-font-weight-medium;
+	}
+
+	.woo-sctr-countdown-timer-text-before {
+		display: block;
+		position: relative;
+		margin: 0 10px 0 0;
+		padding: 0 0 0 22px;
+		color: $primary-color;
+
+		&:before {
+			@extend %FontAwesomeSolid;
+			content: $fa-bolt;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+			font-size: 19px;
+		}
+	}
+}
+
+.minimog-sales-countdown-layout-circle {
+	.woo-sctr-shortcode-countdown-unit-wrap {
+		margin: 0;
+	}
+
+	.woo-sctr-shortcode-countdown-wrap {
+		text-align: start;
+	}
+
+	.woo-sctr-countdown-timer-text-before {
+		line-height: 24px;
+		color: $text-color;
+		padding: 0 !important;
+		margin: 0 0 25px;
+	}
+
+	.woo-sctr-shortcode-countdown-2 {
+		flex-wrap: wrap;
+	}
+
+	.woo-sctr-shortcode-wrap-wrap {
+		text-align: start !important;
+	}
+
+	.woo-sctr-progress-circle .woo-sctr-first50-bar {
+		background-color: $primary-color !important;
+	}
+
+	.woo-sctr-value-bar {
+		border-color: $primary-color !important;
+	}
+
+	.woo-sctr-countdown-time-separator {
+		margin: 0 10px 0 0;
+	}
+
+	.woo-sctr-shortcode-countdown-unit-wrap {
+		margin: 0 10px 0 0;
+	}
+
+	// Size
+	.woo-sctr-progress-circle {
+		--circle-size: 3em;
+		--circle-border-size: 0.25em;
+		width: var(--circle-size);
+		height: var(--circle-size);
+		line-height: var(--circle-size);
+
+		.woo-sctr-countdown-value {
+			line-height: var(--circle-size);
+			width: var(--circle-size);
+		}
+	}
+
+	.woo-sctr-progress-circle.woo-sctr-over50 .woo-sctr-left-half-clipper {
+		clip: rect(auto, auto, auto, auto);
+	}
+
+	.woo-sctr-left-half-clipper {
+		width: var(--circle-size);
+		height: var(--circle-size);
+		clip: rect(0, 3em, 3em, 1.5em);
+	}
+
+	.woo-sctr-progress-circle.woo-sctr-over50 .woo-sctr-first50-bar {
+		clip: rect(0, 3em, 3em, 1.5em);
+		width: var(--circle-size);
+		height: var(--circle-size);
+	}
+
+	.woo-sctr-value-bar {
+		clip: rect(0, 1.5em, 3em, 0);
+		width: var(--circle-size);
+		height: var(--circle-size);
+		border-width: 0.45em;
+	}
+
+	.woo-sctr-progress-circle:after {
+		top: var(--circle-border-size);
+		left: var(--circle-border-size);
+		width: calc(var(--circle-size) - var(--circle-border-size) * 2);
+		height: calc(var(--circle-size) - var(--circle-border-size) * 2);
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.minimog-sales-countdown-layout-inline {
+		--number-size: 16px;
+		--separator-size: 16px;
+
+		.woo-sctr-countdown-timer-text-wrap {
+			font-size: 16px;
+		}
+
+		.woo-sctr-countdown-timer-text-before {
+			padding: 0 0 0 17px;
+
+			&:before {
+				font-size: 16px;
+			}
+		}
+
+		.woo-sctr-countdown-value {
+			min-width: 20px;
+		}
+	}
+}

@@ -1,0 +1,213 @@
+.oneall_social_login_label {
+	font-size: 15px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+
+	&:before,
+	&:after {
+		content: '';
+		flex-grow: 1;
+		height: 1px;
+		background: $box-border;
+	}
+
+	label {
+		padding: 0 15px;
+	}
+}
+
+.mo-openid-app-icons.mo-openid-app-icons {
+	display: flex !important;
+	flex-wrap: wrap;
+	margin: 0 -8px;
+
+	> p {
+		font-size: 14px;
+		font-weight: $body-font-weight;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		color: $text-color !important;
+		width: 100% !important;
+		margin: 0 0 3px !important;
+		padding: 0 10px;
+
+		&:before,
+		&:after {
+			content: '';
+			flex-grow: 1;
+			height: 1px;
+			background: $box-border;
+		}
+
+		&:before {
+			margin: 0 15px 0 0;
+		}
+
+		&:after {
+			margin: 0 0 0 15px;
+		}
+	}
+
+	br,
+	+ br {
+		display: none;
+	}
+
+	.mo_btn-social {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 15px 0 40px !important;
+		height: 45px;
+		line-height: 43px;
+		flex-basis: calc(50% - 16px);
+		max-width: calc(50% - 16px);
+		font-size: $body-font-size;
+		font-weight: $body-font-weight-medium;
+		margin: 15px 8px 0 !important;
+		border: 1px solid $box-border;
+		border-radius: $button-rounded;
+		background: #fff !important;
+		color: $heading-color !important;
+		box-shadow: none !important;
+		cursor: pointer;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		white-space: normal;
+		text-align: start;
+		transform: none !important;
+
+		&:before {
+			@extend %FontAwesomeBrands;
+			position: absolute;
+			left: 15px;
+			top: 50%;
+			transform: translate(0, -50%);
+			display: inline-block !important;
+			color: $heading-color;
+		}
+
+		> :first-child {
+			display: none !important;
+		}
+
+		> i,
+		> svg {
+			display: none !important;
+		}
+
+		> span {
+			color: inherit !important;
+		}
+
+		&:hover {
+			background-color: $box-border !important;
+			box-shadow: 0 0 0 0.2rem $box-border !important;
+		}
+
+		&.mo_btn-facebook {
+			svg {
+				background: #fff !important;
+
+				* {
+					fill: #2e58b2 !important;
+				}
+			}
+
+			&:before {
+				content: $fa-facebook-f;
+				color: #2e58b2;
+			}
+		}
+
+		&.mo_btn-twitter {
+			&:before {
+				content: $fa-twitter;
+				color: #4a76a8;
+			}
+		}
+
+		&.mo_btn-google {
+			&:before {
+				content: $fa-google;
+				color: #dd4b39;
+			}
+		}
+
+		&.mo_btn-instagram {
+			&:before {
+				content: $fa-instagram;
+				color: #c32aa3;
+			}
+		}
+
+		&.mo_btn-linkedin {
+			&:before {
+				content: $fa-linkedin;
+				color: #007bb5;
+			}
+		}
+
+		&.mo_btn-vk {
+			&:before {
+				content: $fa-vk;
+				color: #4a76a8;
+			}
+		}
+
+		&.mo_btn-amazon {
+			&:before {
+				content: $fa-amazon;
+				color: #f90;
+			}
+		}
+
+		&.mo_btn-microsoft {
+			&:before {
+				content: $fa-microsoft;
+				color: #f35022;
+			}
+		}
+
+		&.mo_btn-yahoo {
+			&:before {
+				content: $fa-yahoo;
+				color: #6001d2;
+			}
+		}
+
+		&.mo_btn-apple {
+			&:before {
+				content: $fa-apple;
+				color: #a6b1b7;
+			}
+		}
+
+		&.mo_btn-paypal {
+			&:before {
+				content: $fa-paypal;
+				color: #0070ba;
+			}
+		}
+
+		&.mo_btn-wordpress {
+			&:before {
+				content: $fa-wordpress;
+				color: #346da6;
+			}
+		}
+	}
+}
+
+.mo_image_id,
+.mo_image_id ~ br {
+	display: none;
+}

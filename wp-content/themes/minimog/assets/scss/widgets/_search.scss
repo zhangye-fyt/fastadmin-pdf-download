@@ -1,0 +1,39 @@
+.widget_search,
+.widget_product_search {
+	form {
+		position: relative;
+	}
+
+	.search-field {
+		width: 100%;
+		padding-left: 52px;
+	}
+
+	.search-submit {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0;
+		border: 0;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		box-shadow: none;
+		transform: none;
+		background: transparent;
+		color: $heading-color;
+	}
+
+	.search-btn-text {
+		display: none;
+	}
+
+	.search-btn-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

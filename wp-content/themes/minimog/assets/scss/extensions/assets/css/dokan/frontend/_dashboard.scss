@@ -1,0 +1,9 @@
+@import 'dashboard/orders';
+@import 'dashboard/reviews';
+@import 'dashboard/settings';
+
+.dokan-dashboard-wrap {
+	.dokan-btn {
+		box-shadow: none !important;
+	}
+}

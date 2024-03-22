@@ -1,0 +1,79 @@
+.widget_price_filter {
+	.price_slider {
+		margin-bottom: 25px;
+	}
+
+	.ui-slider-horizontal {
+		.ui-slider-range {
+			top: 0;
+			height: 100%;
+		}
+	}
+
+	.ui-slider {
+		--handle-size: 18px;
+		position: relative;
+		text-align: left;
+		margin-left: calc(0.5 * var(--handle-size));
+		margin-right: calc(0.5 * var(--handle-size));
+		color: $heading-color;
+		height: 4px;
+		border-radius: 5px;
+		background-color: #dbdbdb;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: calc(-0.5 * var(--handle-size));
+			right: calc(-0.5 * var(--handle-size));
+			bottom: 0;
+			background: inherit;
+			border-radius: inherit;
+		}
+	}
+
+	.ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		font-size: .7em;
+		display: block;
+		border: 0;
+		border-radius: 1em;
+		background: currentColor;
+	}
+
+	.ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		border-radius: 50%;
+		cursor: ew-resize;
+		outline: 0;
+		margin-left: calc(-0.5 * var(--handle-size));
+		top: -7px;
+		width: var(--handle-size);
+		height: var(--handle-size);
+		background: currentColor;
+		box-shadow: 0 2px 11px rgba(0, 0, 0, .13);
+	}
+
+	.price_slider_amount {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row-reverse;
+		align-items: center;
+		line-height: inherit;
+	}
+
+	.button {
+		padding: 0 33px !important;
+		height: 32px;
+		line-height: 32px !important;
+	}
+
+	.price_label {
+		font-size: 14px;
+		flex-grow: 1;
+		color: $heading-color;
+	}
+}

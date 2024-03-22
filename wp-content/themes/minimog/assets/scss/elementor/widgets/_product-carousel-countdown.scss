@@ -1,0 +1,144 @@
+.minimog-product-carousel-countdown {
+	.product-countdown-header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 40px;
+		border-bottom: 2px solid #c32018;
+		overflow: hidden;
+	}
+
+	.product-countdown-heading {
+		font-family: $heading2-font-family;
+		font-weight: $heading2-font-weight;
+		font-size: 48px;
+		line-height: 1.2;
+		margin-bottom: 5px;
+		padding: 0 50px 0 0;
+	}
+
+	.countdown-wrap {
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		bottom: -2px;
+		color: #fff;
+		background-color: #c32018;
+		padding: 7px 15px 7px 10px;
+		width: 260px;
+		max-width: 100%;
+		border: 0;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 100%;
+			transform: translate(1px, 0);
+			height: 100%;
+			width: 50px;
+			-webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			background-color: #c32018;
+		}
+
+		&:after {
+			right: auto;
+			left: 100%;
+			transform: translateX(-1px) rotate3d(0, 1, 0, 180deg);
+		}
+	}
+
+	.countdown-label {
+		display: none;
+		font-size: 24px;
+		font-weight: $body-font-weight;
+		margin-right: 15px;
+	}
+
+	.countdown-content {
+		display: flex;
+		font-size: 34px;
+		line-height: 1;
+		font-weight: 500;
+
+		.text {
+			display: none;
+		}
+
+		> div {
+			+ div {
+				position: relative;
+				margin-left: 10px;
+				padding-left: 10px;
+
+				&:before {
+					content: ':';
+					position: absolute;
+					top: -2px;
+					left: -4px;
+				}
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(tablet-extra) {
+	.minimog-product-carousel-countdown {
+		.product-countdown-heading {
+			font-size: 38px;
+		}
+
+		.countdown-label {
+			font-size: 20px;
+		}
+
+		.countdown-content {
+			font-size: 28px;
+		}
+
+		.countdown-wrap {
+			width: 220px;
+
+			&:before,
+			&:after {
+				width: 42px;
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(mobile-extra) {
+	.minimog-product-carousel-countdown {
+		.product-countdown-heading {
+			font-size: 28px;
+		}
+
+		.product-countdown-header {
+			display: block;
+		}
+
+		.product-countdown-heading {
+			padding: 0;
+		}
+
+		.countdown-label {
+			font-size: 16px;
+		}
+
+		.countdown-content {
+			font-size: 22px;
+		}
+
+		.countdown-wrap {
+			width: 190px;
+
+			&:before,
+			&:after {
+				width: 32px;
+			}
+		}
+	}
+}

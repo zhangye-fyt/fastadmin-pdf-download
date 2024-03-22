@@ -1,0 +1,26 @@
+.minimog-wp-widget-instagram {
+	.tm-button-wrapper {
+		margin-top: 4px;
+	}
+
+	.minimog-instagram-image {
+		.icon {
+			display: none;
+		}
+	}
+
+	.tm-button {
+		font-size: 15px;
+		font-weight: $body-font-weight;
+
+		.button-icon {
+			font-size: 16px;
+		}
+
+		&.icon-left {
+			.button-icon {
+				margin-right: 6px;
+			}
+		}
+	}
+}

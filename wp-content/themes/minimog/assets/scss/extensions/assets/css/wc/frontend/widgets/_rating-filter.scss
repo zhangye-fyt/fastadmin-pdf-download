@@ -1,0 +1,58 @@
+.widget_rating_filter {
+	ul {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none outside;
+
+		li {
+			@extend %clearfix;
+			padding: 0 0 1px;
+			list-style: none;
+
+			a {
+				padding: 1px 0;
+			}
+
+			&.chosen {
+				a {
+					position: relative;
+					padding: 0 0 0 25px;
+
+					&:before {
+						@extend %FontAwesomeRegular;
+						content: $fa-times;
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+						color: #a00;
+						margin-right: .618em;
+					}
+				}
+			}
+		}
+	}
+
+	.star-rating {
+		float: none;
+		display: inline-block;
+		width: auto;
+		font-family: inherit;
+		overflow: visible;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.tm-star-rating {
+		--size: 15px;
+	}
+}
+
+.minimog-wp-widget-product-rating-filter {
+	.tm-star-rating {
+		vertical-align: top;
+	}
+}

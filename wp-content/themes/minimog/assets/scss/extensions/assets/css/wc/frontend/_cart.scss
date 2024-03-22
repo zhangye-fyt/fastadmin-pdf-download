@@ -1,0 +1,326 @@
+.woocommerce-cart {
+	.shop_table {
+		margin-bottom: 0;
+
+		th,
+		td {
+			border: 0;
+			background: none;
+			text-align: start;
+			padding: 15px;
+		}
+
+		tr {
+			border-bottom: 1px solid #eee;
+		}
+
+		th {
+			font-weight: $body-font-weight-medium;
+			line-height: 22px;
+		}
+
+		td {
+			padding: 30px 15px;
+		}
+
+		th,
+		td {
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+				text-align: end;
+			}
+		}
+
+		.product-title {
+			font-size: 16px;
+			font-weight: $heading-font-weight-secondary;
+			line-height: 26px;
+			margin-bottom: 0;
+		}
+
+		.product-wrap {
+			display: flex;
+			align-items: center;
+		}
+
+		.product-thumbnail {
+			flex-shrink: 0;
+			width: 110px;
+			margin: 0 20px 0 0;
+		}
+
+		.product-subtotal {
+			.price,
+			.amount {
+				font-weight: 500;
+				color: $heading-color;
+			}
+		}
+
+		.cart-item-label-mobile {
+			display: none;
+		}
+
+		.remove {
+			font-size: 14px;
+		}
+	}
+
+	.checkout-button {
+		width: 100%;
+	}
+
+	div.quantity {
+		--size: 40px;
+		--icon-size: 14px;
+		width: 120px;
+
+		input {
+			background-color: transparent;
+			border-color: #dedede;
+		}
+
+		select {
+			color: $heading-color !important;
+			background-color: transparent !important;
+			border-color: #dedede !important;
+			min-height: var(--size);
+			line-height: 20px;
+			padding: 3px 25px 3px 15px;
+			background-position: center right 15px;
+		}
+	}
+}
+
+.cart-collaterals {
+	display: flex;
+	justify-content: flex-end;
+	margin: 50px 0 0;
+}
+
+ul.woocommerce-shipping-methods {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+		margin: 0;
+
+		input[type='radio'] {
+			top: 1px;
+		}
+	}
+}
+
+.modal-cart {
+	textarea {
+		height: 110px;
+	}
+
+	button {
+		width: 100%;
+	}
+
+	.tm-button {
+		margin: 10px 0 0;
+	}
+}
+
+.empty-cart-messages {
+	text-align: center;
+}
+
+.empty-cart-icon {
+	width: 350px;
+	max-width: 80%;
+	margin: 0 auto 30px;
+}
+
+.empty-cart-heading {
+	font-size: 34px;
+	font-weight: $heading-font-weight-secondary;
+}
+
+.return-to-shop {
+	margin: 30px 0 0;
+	text-align: center;
+}
+
+.cart_totals {
+	width: 400px;
+	max-width: 100%;
+	background: #fff;
+	padding: 20px 30px 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+	> h2 {
+		display: none;
+	}
+
+	.woocommerce-error,
+	.woocommerce-info,
+	.woocommerce-message {
+		margin-bottom: 20px !important;
+		padding: 10px 15px 10px 50px;
+
+		&:before {
+			left: 15px;
+		}
+	}
+}
+
+.woocommerce-order-details,
+.cart_totals {
+	tfoot tr,
+	.cart-totals-row {
+		min-height: 48px;
+		padding: 10px 0;
+		border-top: 1px solid #eee;
+	}
+}
+
+.wc-proceed-to-checkout {
+	margin: 10px 0 0;
+}
+
+.shipping-calculator-form .form-submit-wrap {
+	margin: 0;
+}
+
+.shipping-calculator-form {
+	margin-top: 10px;
+}
+
+.cart-empty.woocommerce-info {
+	margin: 0 !important;
+	background: none !important;
+	padding: 0 !important;
+
+	&:before {
+		display: none;
+	}
+}
+
+.cross-sells.products {
+	position: relative;
+	margin-top: 80px;
+	padding-top: 88px;
+
+	&:before {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 3000px;
+		height: 1px;
+		background-color: #ededed;
+		content: '';
+	}
+}
+
+.cross-sells-products-heading {
+	font-size: 34px;
+	font-weight: $heading-font-weight-secondary;
+	line-height: 1.42;
+	margin: 0 0 39px;
+}
+
+@include media-breakpoint-down(md) {
+	.cross-sells.products {
+		margin-top: 80px;
+		padding-top: 65px;
+	}
+
+	.cross-sells-products-heading {
+		font-size: 28px;
+	}
+
+	.woocommerce-cart {
+		.empty-cart-heading {
+			font-size: 28px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.woocommerce-page {
+		table.shop_table {
+			thead {
+				display: none;
+			}
+
+			tbody,
+			th,
+			td,
+			tr {
+				display: block;
+			}
+
+			td {
+				padding: 0 !important;
+
+				&:last-child {
+					text-align: start;
+				}
+			}
+
+			.cart_item {
+				position: relative;
+				padding: 20px 15px 20px 80px;
+				min-height: 90px;
+			}
+
+			.product-quantity {
+				margin-top: 10px;
+			}
+
+			div.quantity {
+				--size: 32px;
+				width: 110px;
+			}
+
+			.product-subtotal {
+				margin: 10px 0 0;
+			}
+
+			.cart-item-label-mobile {
+				display: inline-block;
+			}
+
+			.product-title {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			.product-price {
+				display: none;
+			}
+
+			.product-thumbnail {
+				position: absolute;
+				top: 20px;
+				left: 0;
+				width: 60px;
+
+				img {
+					width: 60px;
+				}
+			}
+		}
+	}
+
+	.cross-sells.products {
+		margin-top: 50px;
+		padding-top: 42px;
+	}
+
+	.cross-sells-products-heading {
+		font-size: 22px;
+		margin: 0 0 25px;
+	}
+}

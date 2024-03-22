@@ -1,0 +1,91 @@
+@import "redux/button-set";
+@import "redux/sortable";
+@import "redux/border";
+@import "redux/custom-class";
+
+.redux-group-tab {
+	margin: 0 0 20px !important;
+
+	> h2 {
+		margin: 20px 0 10px;
+	}
+}
+
+.row-no-border {
+	border: 0 !important;
+
+	.redux_field_th,
+	.redux-field-container {
+		padding-bottom: 0 !important;
+	}
+}
+
+.field-header-shadow {
+	#shadow-result {
+		background: none !important;
+		border: 1px solid #eee !important;
+		min-height: 70px !important;
+		padding: 0 !important;
+	}
+}
+
+.redux-action_bar {
+	input[type='submit'] {
+		margin: 1px 0 0 10px !important;
+	}
+}
+
+#minimog_options-settings_presets {
+	--grid-columns: 3;
+
+	ul.redux-image-select {
+		display: grid;
+		grid-template-columns: repeat(var(--grid-columns, 3), 1fr);
+		grid-gap: 20px 26px;
+		max-width: 1300px;
+
+		> li {
+			min-width: 0;
+			text-align: center;
+
+			label,
+			img {
+				width: 100% !important;
+			}
+
+			span {
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.redux-main .redux-option-image {
+	&#image_logo_light {
+		background: #000;
+		border-color: #000;
+	}
+}
+
+@media screen and(max-width: 1405px) {
+	.redux-container .redux-main .form-table tr {
+		border: 0 !important;
+	}
+
+	.redux_field_th {
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+	}
+
+	.redux-main .redux-field-container {
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+	}
+}
+
+@media screen and(max-width: 1200px) {
+	#minimog_options-settings_presets {
+		--grid-columns: 2;
+	}
+}
